@@ -1,0 +1,2260 @@
+<!DOCTYPE html>
+<html lang="en" class="html light">
+   <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>A-VI-DOS</title>
+
+      <!-- <link rel="shortcut icon" href="../../favicon.ico" type="image/x-icon"> -->
+      <!-- <link rel="icon" href="../../favicon.ico" type="image/x-icon"> -->
+
+      <link rel="stylesheet" href="./css/style.css">
+
+   </head>
+
+   <body class="body bg-common">
+      <div class="wrapper dark:bg-black mx-auto flex flex-col justify-between text-base overflow-x-clip relative">
+         
+         <header class="header mb-4 border-b-[2px] dark:border-b-[#1A1A1A] border-b-[#E7E7E7] flex z-10 items-center dark:bg-[#0A0A0A] bg-white w-full">
+            <div class="header__inner h-[56px] md:h-[72px] page-container px-[10px] md:px-[25px] lg:px-[32px] flex items-center w-full">
+            
+               <div class="header-burger px-[6px] py-[9px] cursor-pointer z-[99] relative block md:hidden">
+                  <div class="aside-menu__icon relative w-6 h-6 pointer-events-none">
+                     <span></span>
+                  </div>
+               </div>
+      
+               <a href="#" class="logo flex items-center flex-shrink-0 font-main text-[24px] smd:text-[28px] md:text-[32px] text-center font-bold text-accent ml-auto mr-auto md:mr-3 md:ml-0">
+                  <span class="leading-[100%]">A</span>
+                  <span class="text-black dark:text-white">-</span>
+                  <span class="leading-[100%]">VI</span>
+                  <span class="text-black dark:text-white">-</span>
+                  <span class="leading-[100%]">DOS</span>
+               </a>
+
+               <div class="header-search__wrapper absolute top-[57px] left-[100%] md:left-0 md:top-0 md:relative mx-auto w-full max-w-full md:max-w-[465px] dark:bg-black bg-common md:bg-transparent h-dvh md:h-auto px-[20px] md:px-0 transition-all hidden md:flex flex-col">
+                  <div class="header-search flex items-center relative z-[2] justify-between gap-3 border-[2px] border-[#E7E7E7] dark:bg-black dark:border-[#1A1A1A] rounded-[8px] h-[40px] p-1 w-full bg-white mt-[16px] md:mt-0">
+                     <input type="text" class="search__input text-main w-full text-4 text-black dark:text-white font-normal px-2 dark:bg-black" placeholder="What do you want to find?">
+                     
+                     <button class="search__btn hidden md:flex bg-accent w-8 h-8 rounded-[6px] justify-center items-center flex-shrink-0 hover:bg-accenthover hover">
+                        <svg class="w-5 h-5 fill-white">
+                           <use xlink:href="#search"></use>
+                        </svg>
+                     </button>
+                  </div>
+
+                  <div class="search-list__body flex-col gap-3 z-[1] bg-white dark:bg-black dark:border-[#1A1A1A] rounded-b-[8px] border-[1px] border-t-0 border-[#E7E7E7] p-3 absolute top-[35px] left-0 right-0 w-full max-w-[465px] -translate-y-5 opacity-0 hidden">
+                     <a href="#" class="search-list__item w-full flex h-[24px] font-main font-normal text-[16px] text-black text-ellipsis whitespace-nowrap overflow-hidden hover hover:underline dark:text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit.</a>
+                     
+                     <a href="#" class="search-list__item w-full flex h-[24px] font-main font-normal text-[16px] text-black text-ellipsis whitespace-nowrap overflow-hidden hover hover:underline dark:text-white">Lorem ipsum dolor sit amet consectetur</a>
+                     
+                     <a href="#" class="search-list__item w-full flex h-[24px] font-main font-normal text-[16px] text-black text-ellipsis whitespace-nowrap overflow-hidden hover hover:underline dark:text-white">Lorem ipsum dolor sit amet consectetur dolor sit amet consectetur</a>
+                  
+                     <a href="#" class="search-list__item w-full flex h-[24px] font-main font-normal text-[16px] text-black text-ellipsis whitespace-nowrap overflow-hidden hover hover:underline dark:text-white">Dolor sit amet consectetur dolor sconsectetur</a>
+                     
+                     <a href="#" class="search-list__item w-full flex h-[24px] font-main font-normal text-[16px] text-black text-ellipsis whitespace-nowrap overflow-hidden hover hover:underline dark:text-white">Consectetur dolor sconsectetur</a>
+                  </div>
+
+                  <div class="search__mobile mt-6 md:hidden flex flex-col">
+                     <h3 class="search__mobile-title mb-3 font-medium">Popular requests</h3>
+
+                     <div class="search__mobile-list flex gap-x-[4px] gap-y-[8px] flex-wrap">
+                        <a href="#" class="search__mobile-link font-normal font-main uppercase dark:text-white text-black text-[14px] px-2 py-[2px] dark:border-[#1A1A1A] border-[2px] border-[#E7E7E7] rounded-[6px] hover dark:hover:bg-accent hover:bg-[#E7E7E7]">TABOO</a>
+                        <a href="#" class="search__mobile-link font-normal font-main uppercase dark:text-white text-black text-[14px] px-2 py-[2px] dark:border-[#1A1A1A] border-[2px] border-[#E7E7E7] rounded-[6px] hover dark:hover:bg-accent hover:bg-[#E7E7E7]">LOREM</a>
+                        <a href="#" class="search__mobile-link font-normal font-main uppercase dark:text-white text-black text-[14px] px-2 py-[2px] dark:border-[#1A1A1A] border-[2px] border-[#E7E7E7] rounded-[6px] hover dark:hover:bg-accent hover:bg-[#E7E7E7]">DOLIRAT</a>
+                        <a href="#" class="search__mobile-link font-normal font-main uppercase dark:text-white text-black text-[14px] px-2 py-[2px] dark:border-[#1A1A1A] border-[2px] border-[#E7E7E7] rounded-[6px] hover dark:hover:bg-accent hover:bg-[#E7E7E7]">INTRO</a>
+                        <a href="#" class="search__mobile-link font-normal font-main uppercase dark:text-white text-black text-[14px] px-2 py-[2px] dark:border-[#1A1A1A] border-[2px] border-[#E7E7E7] rounded-[6px] hover dark:hover:bg-accent hover:bg-[#E7E7E7]">KARTON</a>
+                        <a href="#" class="search__mobile-link font-normal font-main uppercase dark:text-white text-black text-[14px] px-2 py-[2px] dark:border-[#1A1A1A] border-[2px] border-[#E7E7E7] rounded-[6px] hover dark:hover:bg-accent hover:bg-[#E7E7E7]">FACILYTI</a>
+                        <a href="#" class="search__mobile-link font-normal font-main uppercase dark:text-white text-black text-[14px] px-2 py-[2px] dark:border-[#1A1A1A] border-[2px] border-[#E7E7E7] rounded-[6px] hover dark:hover:bg-accent hover:bg-[#E7E7E7]">MEKOA</a>
+                        <a href="#" class="search__mobile-link font-normal font-main uppercase dark:text-white text-black text-[14px] px-2 py-[2px] dark:border-[#1A1A1A] border-[2px] border-[#E7E7E7] rounded-[6px] hover dark:hover:bg-accent hover:bg-[#E7E7E7]">TABOO</a>
+                        <a href="#" class="search__mobile-link font-normal font-main uppercase dark:text-white text-black text-[14px] px-2 py-[2px] dark:border-[#1A1A1A] border-[2px] border-[#E7E7E7] rounded-[6px] hover dark:hover:bg-accent hover:bg-[#E7E7E7]">LOREM</a>
+                        <a href="#" class="search__mobile-link font-normal font-main uppercase dark:text-white text-black text-[14px] px-2 py-[2px] dark:border-[#1A1A1A] border-[2px] border-[#E7E7E7] rounded-[6px] hover dark:hover:bg-accent hover:bg-[#E7E7E7]">DOLIRAT</a>
+                        <a href="#" class="search__mobile-link font-normal font-main uppercase dark:text-white text-black text-[14px] px-2 py-[2px] dark:border-[#1A1A1A] border-[2px] border-[#E7E7E7] rounded-[6px] hover dark:hover:bg-accent hover:bg-[#E7E7E7]">INTRO</a>
+                        <a href="#" class="search__mobile-link font-normal font-main uppercase dark:text-white text-black text-[14px] px-2 py-[2px] dark:border-[#1A1A1A] border-[2px] border-[#E7E7E7] rounded-[6px] hover dark:hover:bg-accent hover:bg-[#E7E7E7]">KARTON</a>
+                        <a href="#" class="search__mobile-link font-normal font-main uppercase dark:text-white text-black text-[14px] px-2 py-[2px] dark:border-[#1A1A1A] border-[2px] border-[#E7E7E7] rounded-[6px] hover dark:hover:bg-accent hover:bg-[#E7E7E7]">FACILYTI</a>
+                        <a href="#" class="search__mobile-link font-normal font-main uppercase dark:text-white text-black text-[14px] px-2 py-[2px] dark:border-[#1A1A1A] border-[2px] border-[#E7E7E7] rounded-[6px] hover dark:hover:bg-accent hover:bg-[#E7E7E7]">MEKOA</a>
+                        <a href="#" class="search__mobile-link font-normal font-main uppercase dark:text-white text-black text-[14px] px-2 py-[2px] dark:border-[#1A1A1A] border-[2px] border-[#E7E7E7] rounded-[6px] hover dark:hover:bg-accent hover:bg-[#E7E7E7]">TABOO</a>
+                        <a href="#" class="search__mobile-link font-normal font-main uppercase dark:text-white text-black text-[14px] px-2 py-[2px] dark:border-[#1A1A1A] border-[2px] border-[#E7E7E7] rounded-[6px] hover dark:hover:bg-accent hover:bg-[#E7E7E7]">LOREM</a>
+                        <a href="#" class="search__mobile-link font-normal font-main uppercase dark:text-white text-black text-[14px] px-2 py-[2px] dark:border-[#1A1A1A] border-[2px] border-[#E7E7E7] rounded-[6px] hover dark:hover:bg-accent hover:bg-[#E7E7E7]">DOLIRAT</a>
+                        <a href="#" class="search__mobile-link font-normal font-main uppercase dark:text-white text-black text-[14px] px-2 py-[2px] dark:border-[#1A1A1A] border-[2px] border-[#E7E7E7] rounded-[6px] hover dark:hover:bg-accent hover:bg-[#E7E7E7]">INTRO</a>
+                        <a href="#" class="search__mobile-link font-normal font-main uppercase dark:text-white text-black text-[14px] px-2 py-[2px] dark:border-[#1A1A1A] border-[2px] border-[#E7E7E7] rounded-[6px] hover dark:hover:bg-accent hover:bg-[#E7E7E7]">KARTON</a>
+                        <a href="#" class="search__mobile-link font-normal font-main uppercase dark:text-white text-black text-[14px] px-2 py-[2px] dark:border-[#1A1A1A] border-[2px] border-[#E7E7E7] rounded-[6px] hover dark:hover:bg-accent hover:bg-[#E7E7E7]">FACILYTI</a>
+                        <a href="#" class="search__mobile-link font-normal font-main uppercase dark:text-white text-black text-[14px] px-2 py-[2px] dark:border-[#1A1A1A] border-[2px] border-[#E7E7E7] rounded-[6px] hover dark:hover:bg-accent hover:bg-[#E7E7E7]">MEKOA</a>
+
+                     </div> 
+                  </div>                
+               </div> 
+             
+               <div class="header__controls mx-4 items-center hidden md:flex relative z-0 gap- 3 mmd:gap-6 flex-shrink-0">
+               
+                  <div class="lang__box items-center cursor-pointer relative hidden smd:flex">
+                     <span class="lang__title mr-4 font-main font-bold text-[16px] text-black dark:text-white hidden lg:block">Language</span>
+                     <div class="lang__box-item flex items-center justify-center gap-[8px] w-[72px] h-[40px] bg-common dark:bg-black dark:border-[#1A1A1A] border-[2px] border-[#E7E7E7] rounded-[8px] hover hover:bg-[#e7e7e7]">
+                        <img class="lang__icon w-[30px] h-[24px]" src="./img/usa.svg" alt="icon">
+                        
+                        <svg class="lang__arrow w-[14px] h-[7px] fill-accent rotate-180">
+                           <use xlink:href="#arrow-up"></use>
+                        </svg>
+                     </div>
+
+                     <div class="lang__body absolute z-[2] rounded-[8px] border-[1px] border-[#E7E7E7] bg-common dark:bg-black dark:border-[#1A1A1A] pl-[15px] pr-[8px] py-5 w-[196px] h-[505px]">
+                     <div class="lang__inner flex flex-col gap-5 overflow-y-auto w-full">
+                           <a href="#" class="lang__item hover:text-accent flex items-centr gap-[15px]">
+                              <img class="lang__icon w-[30px] h-[24px]" src="./img/cestina.svg" alt="icon">
+                              <span class="font-main font-bold text-black text-[16px] dark:text-white">Čeština</span>
+                           </a>
+                           
+                           <a href="#" class="lang__item hover:text-accent flex items-centr gap-[15px] hover">
+                              <img class="lang__icon w-[30px] h-[24px]" src="./img/danske.svg" alt="icon">
+                              <span class="font-main font-bold text-black text-[16px] dark:text-white">Danske</span>
+                           </a>
+                           
+                           <a href="#" class="lang__item hover:text-accent flex items-centr gap-[15px] hover">
+                              <img class="lang__icon w-[30px] h-[24px]" src="./img/deutsch.svg" alt="icon">
+                              <span class="font-main font-bold text-black text-[16px] dark:text-white">Deutsch</span>
+                           </a>
+                           
+                           <a href="#" class="lang__item hover:text-accent flex items-centr gap-[15px] hover">
+                              <img class="lang__icon w-[30px] h-[24px]" src="./img/eestikeel.svg" alt="icon">
+                              <span class="font-main font-bold text-black text-[16px] dark:text-white">Eesti keel</span>
+                           </a>
+                           
+                           <a href="#" class="lang__item active hover:text-accent flex items-centr gap-[15px] hover">
+                              <img class="lang__icon w-[30px] h-[24px]" src="./img/usa.svg" alt="icon">
+                              <span class="font-main font-bold text-black text-[16px] dark:text-white">English</span>
+                           </a>
+                           
+                           <a href="#" class="lang__item hover:text-accent flex items-centr gap-[15px] hover">
+                              <img class="lang__icon w-[30px] h-[24px]" src="./img/espanol.svg" alt="icon">
+                              <span class="font-main font-bold text-black text-[16px] dark:text-white">Español</span>
+                           </a>
+                           
+                           <a href="#" class="lang__item hover:text-accent flex items-centr gap-[15px] hover">
+                              <img class="lang__icon w-[30px] h-[24px]" src="./img/francais.svg" alt="icon">
+                              <span class="font-main font-bold text-black text-[16px] dark:text-white">Français</span>
+                           </a>
+                           
+                           <a href="#" class="lang__item hover:text-accent flex items-centr gap-[15px] hover">
+                              <img class="lang__icon w-[30px] h-[24px]" src="./img/gaeilge.svg" alt="icon">
+                              <span class="font-main font-bold text-black text-[16px] dark:text-white">Gaeilge</span>
+                           </a>
+
+                           <a href="#" class="lang__item hover:text-accent flex items-centr gap-[15px] hover">
+                              <img class="lang__icon w-[30px] h-[24px]" src="./img/hrvatski.svg" alt="icon">
+                              <span class="font-main font-bold text-black text-[16px] dark:text-white">Hrvatski</span>
+                           </a>
+
+                           <a href="#" class="lang__item hover:text-accent flex items-centr gap-[15px] hover">
+                              <img class="lang__icon w-[30px] h-[24px]" src="./img/italiano.svg" alt="icon">
+                              <span class="font-main font-bold text-black text-[16px] dark:text-white">Italiano</span>
+                           </a>
+
+                           <a href="#" class="lang__item hover:text-accent flex items-centr gap-[15px] hover">
+                              <img class="lang__icon w-[30px] h-[24px]" src="./img/latviesu.svg" alt="icon">
+                              <span class="font-main font-bold text-black text-[16px] dark:text-white">Latviešu</span>
+                           </a>
+
+                           <a href="#" class="lang__item hover:text-accent flex items-centr gap-[15px] hover">
+                              <img class="lang__icon w-[30px] h-[24px]" src="./img/lietuvie.svg" alt="icon">
+                              <span class="font-main font-bold text-black text-[16px] dark:text-white">Lietuvių</span>
+                           </a>
+
+                           <a href="#" class="lang__item hover:text-accent flex items-centr gap-[15px] hover">
+                              <img class="lang__icon w-[30px] h-[24px]" src="./img/magyar.svg" alt="icon">
+                              <span class="font-main font-bold text-black text-[16px] dark:text-white">Magyar</span>
+                           </a>
+
+                           <a href="#" class="lang__item hover:text-accent flex items-centr gap-[15px] hover">
+                              <img class="lang__icon w-[30px] h-[24px]" src="./img/malti.svg" alt="icon">
+                              <span class="font-main font-bold text-black text-[16px] dark:text-white">Malti</span>
+                           </a>
+
+                           <a href="#" class="lang__item hover:text-accent flex items-centr gap-[15px] hover">
+                              <img class="lang__icon w-[30px] h-[24px]" src="./img/nederlandse.svg" alt="icon">
+                              <span class="font-main font-bold text-black text-[16px] dark:text-white">Nederlandse</span>
+                           </a>
+
+                           <a href="#" class="lang__item hover:text-accent flex items-centr gap-[15px] hover">
+                              <img class="lang__icon w-[30px] h-[24px]" src="./img/norsk.svg" alt="icon">
+                              <span class="font-main font-bold text-black text-[16px] dark:text-white">Norsk</span>
+                           </a>
+
+                           <a href="#" class="lang__item hover:text-accent flex items-centr gap-[15px] hover">
+                              <img class="lang__icon w-[30px] h-[24px]" src="./img/polskie.svg" alt="icon">
+                              <span class="font-main font-bold text-black text-[16px] dark:text-white">Polskie</span>
+                           </a>
+
+                           <a href="#" class="lang__item hover:text-accent flex items-centr gap-[15px] hover">
+                              <img class="lang__icon w-[30px] h-[24px]" src="./img/portugues.svg" alt="icon">
+                              <span class="font-main font-bold text-black text-[16px] dark:text-white">Português</span>
+                           </a>
+
+                           <a href="#" class="lang__item hover:text-accent flex items-centr gap-[15px] hover">
+                              <img class="lang__icon w-[30px] h-[24px]" src="./img/romana.svg" alt="icon">
+                              <span class="font-main font-bold text-black text-[16px] dark:text-white">Română</span>
+                           </a>
+
+                           <a href="#" class="lang__item hover:text-accent flex items-centr gap-[15px] hover">
+                              <img class="lang__icon w-[30px] h-[24px]" src="./img/slovencia.svg" alt="icon">
+                              <span class="font-main font-bold text-black text-[16px] dark:text-white">Slovenčina</span>
+                           </a>
+
+                           <a href="#" class="lang__item hover:text-accent flex items-centr gap-[15px] hover">
+                              <img class="lang__icon w-[30px] h-[24px]" src="./img/slovenscia.svg" alt="icon">
+                              <span class="font-main font-bold text-black text-[16px] dark:text-white">Slovenščina</span>
+                           </a>
+
+                           <a href="#" class="lang__item hover:text-accent flex items-centr gap-[15px] hover">
+                              <img class="lang__icon w-[30px] h-[24px]" src="./img/suomenkieli.svg" alt="icon">
+                              <span class="font-main font-bold text-black text-[16px] dark:text-white">Suomen kieli</span>
+                           </a>
+
+                           <a href="#" class="lang__item hover:text-accent flex items-centr gap-[15px] hover">
+                              <img class="lang__icon w-[30px] h-[24px]" src="./img/svenska.svg" alt="icon">
+                              <span class="font-main font-bold text-black text-[16px] dark:text-white">Svenska</span>
+                           </a>
+
+                           <a href="#" class="lang__item hover:text-accent flex items-centr gap-[15px] hover">
+                              <img class="lang__icon w-[30px] h-[24px]" src="./img/tiengviet.svg" alt="icon">
+                              <span class="font-main font-bold text-black text-[16px] dark:text-white">Tiếng Việt</span>
+                           </a>
+
+                           <a href="#" class="lang__item hover:text-accent flex items-centr gap-[15px] hover">
+                              <img class="lang__icon w-[30px] h-[24px]" src="./img/turke.svg" alt="icon">
+                              <span class="font-main font-bold text-black text-[16px] dark:text-white">Türkçe</span>
+                           </a>
+
+                           <a href="#" class="lang__item hover:text-accent flex items-centr gap-[15px] hover">
+                              <img class="lang__icon w-[30px] h-[24px]" src="./img/greece.svg" alt="icon">
+                              <span class="font-main font-bold text-black text-[16px] dark:text-white">Ελληνική</span>
+                           </a>
+
+                           <a href="#" class="lang__item hover:text-accent flex items-centr gap-[15px] hover">
+                              <img class="lang__icon w-[30px] h-[24px]" src="./img/bolgarie.svg" alt="icon">
+                              <span class="font-main font-bold text-black text-[16px] dark:text-white">Български</span>
+                           </a>
+
+                           <a href="#" class="lang__item hover:text-accent flex items-centr gap-[15px] hover">
+                              <img class="lang__icon w-[30px] h-[24px]" src="./img/russia.svg" alt="icon">
+                              <span class="font-main font-bold text-black text-[16px] dark:text-white">Руссский</span>
+                           </a>
+
+                           <a href="#" class="lang__item hover:text-accent flex items-centr gap-[15px] hover">
+                              <img class="lang__icon w-[30px] h-[24px]" src="./img/israel.svg" alt="icon">
+                              <span class="font-main font-bold text-black text-[16px] dark:text-white">עברית</span>
+                           </a>
+
+                           <a href="#" class="lang__item hover:text-accent flex items-centr gap-[15px] hover">
+                              <img class="lang__icon w-[30px] h-[24px]" src="./img/arabish.svg" alt="icon">
+                              <span class="font-main font-bold text-black text-[16px] dark:text-white">العربية</span>
+                           </a>
+
+                           <a href="#" class="lang__item hover:text-accent flex items-centr gap-[15px] hover">
+                              <img class="lang__icon w-[30px] h-[24px]" src="./img/india.svg" alt="icon">
+                              <span class="font-main font-bold text-black text-[16px] dark:text-white">हिन्दी</span>
+                           </a>
+
+                           <a href="#" class="lang__item hover:text-accent flex items-centr gap-[15px] hover">
+                              <img class="lang__icon w-[30px] h-[24px]" src="./img/china.svg" alt="icon">
+                              <span class="font-main font-bold text-black text-[16px] dark:text-white">中文</span>
+                           </a>
+
+                           <a href="#" class="lang__item hover:text-accent flex items-centr gap-[15px] hover">
+                              <img class="lang__icon w-[30px] h-[24px]" src="./img/japan.svg" alt="icon">
+                              <span class="font-main font-bold text-black text-[16px] dark:text-white">日本語</span>
+                           </a>
+                     </div>
+                     </div>
+                  </div>
+
+               </div>
+
+               <div class="toggle-theme-box hidden md:flex justify-between items-center w-[72px] h-[40px] rounded-[8px] bg-common dark:bg-black dark:border-[#1A1A1A] p-[4px] border-[2px] border-[#E7E7E7] hover hover:bg-[#e7e7e7]">
+                  <button class="light__day light__btn w-7 h-7 flex items-center justify-center rounded-[4px]">
+                     <svg class="light__svg w-4 h-4">
+                        <use xlink:href="#light"></use>
+                     </svg>
+                  </button>
+
+                  <button class="light__night light__btn w-7 h-7 flex items-center justify-center rounded-[4px]">
+                     <svg class="w-4 h-4">
+                        <use xlink:href="#dark"></use>
+                     </svg>
+                  </button>
+               </div>
+
+               <button class="mobile__search-btn flex md:hidden">
+                  <svg class="search-btn__open dark:fill-white w-6 h-6 fill-black hover dark:hover:fill-accent hover:fill-accent">
+                     <use xlink:href="#search"></use>
+                  </svg>
+
+                  <svg class="search-btn__close dark:fill-white w-6 h-6 fill-black hover dark:hover:fill-accent hover:fill-accent hidden">
+                     <use xlink:href="#x"></use>
+                  </svg>
+               </button>
+            </div>
+         </header>
+
+         <main class="main dark:bg-black flex flex-col mb-auto page-container">
+            <div class="controls-wrapper -left-[100%] absolute md:static h-full md:h-auto w-[90%] md:w-full transition-all dark:bg-[#0a0a0a] bg-white border-[1px] dark:border-[#1a1a1a] border-[#E7E7E7] md:border-none md:bg-transparent top-[56px] md:top-0 p-5 md:p-0 z-[1]">
+               <div class="controls-btn-block flex flex-col md:flex-row items-center gap-[8px] relative h-full md:h-auto">
+                  <a href="#" class="controls-btn-item controls-btn__item burger__mobile-item p-[8px] md:p-[12px] rounded-[8px] border-[1px] dark:border-[#1A1A1A] border-[#E7E7E7] dark:bg-[#0A0A0A] bg-[#F8F8F8] md:bg-white flex items-center justify-start md:justify-center gap-[12px] w-full md:w-[48px] h-[48px] hover hover:bg-[#E7E7E7]">
+                     <svg class="fill-accent w-5 h-5 flex flex-shrink-0 pointer-events-none md:pointer-events-auto">
+                        <use xlink:href="#home"></use>
+                     </svg>
+                     <span class="font-main font-bold text-[14px] flex md:hidden lg:text-[16px] dark:text-white text-black pointer-events-none md:pointer-events-auto">Home</span>
+                  </a>
+
+                  <div class="controls-btn__main-block flex flex-col md:grid md:grid-cols-4 gap-[8px] w-full h-full md:h-auto">
+                     <div class="controls-btn-item controls-btn-item--1 cursor-pointer controls-btn__item1 p-[8px] md:p-[12px] rounded-[8px] border-[1px] dark:border-[#1A1A1A] border-[#E7E7E7] dark:bg-[#0A0A0A] bg-[#F8F8F8] md:bg-white flex items-center justify-center gap-[12px] md:gap-[6px] lg:gap-[12px] h-[48px] hover hover:bg-[#E7E7E7]">
+                        <svg class="fill-accent w-5 h-5 flex flex-shrink-0 pointer-events-none md:pointer-events-auto">
+                           <use xlink:href="#best-video"></use>
+                        </svg>
+                        <span class="font-main font-bold text-[14px] lg:text-[16px] text-black dark:text-white pointer-events-none md:pointer-events-auto">Best videos</span>
+
+                        <svg class="lang__arrow w-[14px] h-[7px] fill-accent ml-auto flex flex-shrink-0 rotate-90">
+                           <use xlink:href="#arrow-up"></use>
+                        </svg>
+                     </div>
+
+                     <div class="controls-btn-item controls-btn-item--2 cursor-pointer controls-btn__item2 p-[8px] md:p-[12px] rounded-[8px] border-[1px] dark:border-[#1A1A1A] border-[#E7E7E7] dark:bg-[#0A0A0A] bg-[#F8F8F8] md:bg-white flex items-center justify-center gap-[12px] md:gap-[6px] lg:gap-[12px] h-[48px] hover hover:bg-[#E7E7E7]">
+                        <svg class="fill-accent w-5 h-5 flex flex-shrink-0 pointer-events-none md:pointer-events-auto">
+                           <use xlink:href="#categories"></use>
+                        </svg>
+                        <span class="font-main font-bold text-[14px] lg:text-[16px] text-black dark:text-white pointer-events-none md:pointer-events-auto">Categories</span>
+
+                        <svg class="lang__arrow w-[14px] h-[7px] fill-accent ml-auto flex flex-shrink-0 rotate-90">
+                           <use xlink:href="#arrow-up"></use>
+                        </svg>
+                     </div>
+
+                     <div class="controls-btn-item controls-btn-item--3 cursor-pointer controls-btn__item3 p-[8px] md:p-[12px] rounded-[8px] border-[1px] dark:border-[#1A1A1A] border-[#E7E7E7] dark:bg-[#0A0A0A] bg-[#F8F8F8] md:bg-white flex items-center justify-center gap-[12px] md:gap-[6px] lg:gap-[12px] h-[48px] hover hover:bg-[#E7E7E7]">
+                        <svg class="fill-accent w-5 h-5 flex flex-shrink-0 pointer-events-none md:pointer-events-auto">
+                           <use xlink:href="#channels"></use>
+                        </svg>
+                        <span class="font-main font-bold text-[14px] lg:text-[16px] text-black dark:text-white pointer-events-none md:pointer-events-auto">Channels</span>
+
+                        <svg class="lang__arrow w-[14px] h-[7px] fill-accent ml-auto flex flex-shrink-0 rotate-90">
+                           <use xlink:href="#arrow-up"></use>
+                        </svg>
+                     </div>
+
+                     <div class="controls-btn-item controls-btn-item--4 cursor-pointer controls-btn__item4 p-[8px] md:p-[12px] rounded-[8px] border-[1px] dark:border-[#1A1A1A] border-[#E7E7E7] dark:bg-[#0A0A0A] bg-[#F8F8F8] md:bg-white flex items-center justify-center gap-[12px] md:gap-[6px] lg:gap-[12px] h-[48px] hover hover:bg-[#E7E7E7]">
+                        <svg class="fill-accent w-5 h-5 flex flex-shrink-0 pointer-events-none md:pointer-events-auto">
+                           <use xlink:href="#star"></use>
+                        </svg>
+                        <span class="font-main font-bold text-[14px] lg:text-[16px] text-black dark:text-white pointer-events-none md:pointer-events-auto">Stars</span>
+
+                        <svg class="lang__arrow w-[14px] h-[7px] fill-accent ml-auto flex flex-shrink-0 rotate-90">
+                           <use xlink:href="#arrow-up"></use>
+                        </svg>
+                     </div>
+                  
+                     <div class="controls-btn-item controls-btn-item--5 flex md:hidden cursor-pointer controls-btn__item5 pl-[8px] md:p-[12px] rounded-[8px] items-center justify-between gap-[12px] md:gap-[6px] lg:gap-[12px] h-[40px] hover mt-auto">
+                     <span class="lang-title__mobile font-main font-bold text-[14px] lg:text-[16px] text-black dark:text-white pointer-events-none md:pointer-events-auto">Language</span>
+
+                     <div class="lang__box-item flex pointer-events-none items-center justify-center gap-[8px] w-[72px] h-[40px] bg-common dark:bg-black dark:border-[#1A1A1A] border-[2px] border-[#E7E7E7] rounded-[8px] hover hover:bg-[#e7e7e7]">
+                        <img class="lang__icon w-[30px] h-[24px]" src="./img/usa.svg" alt="icon">
+                        
+                        <svg class="lang__arrow w-[14px] h-[7px] fill-accent rotate-90">
+                           <use xlink:href="#arrow-up"></use>
+                        </svg>
+                     </div>
+                     </div>
+
+                     <div class="controls-btn-item toggle-theme-wrapper flex md:hidden cursor-pointer controls-btn__item5 pl-[8px] md:p-[12px] rounded-[8px] items-center justify-between gap-[12px] md:gap-[6px] lg:gap-[12px] h-[40px] hover">
+                        <span class="lang-title__mobile font-main font-bold text-[14px] lg:text-[16px] text-black dark:text-white pointer-events-none md:pointer-events-auto">Theme</span>
+
+                        <div class="toggle-theme-box pointer-events-none flex md:hidden justify-between items-center w-[72px] h-[40px] rounded-[8px] bg-common dark:bg-black dark:border-[#1A1A1A] p-[4px] border-[2px] border-[#E7E7E7] hover hover:bg-[#e7e7e7]">
+                           <button class="light__day light__btn w-7 h-7 flex items-center justify-center rounded-[4px]">
+                              <svg class="light__svg w-4 h-4">
+                                 <use xlink:href="#light"></use>
+                              </svg>
+                           </button>
+            
+                           <button class="light__night light__btn w-7 h-7 flex items-center justify-center rounded-[4px]">
+                              <svg class="w-4 h-4">
+                                 <use xlink:href="#dark"></use>
+                              </svg>
+                           </button>
+                        </div>
+                     </div>
+                  </div>
+
+                  <!------------------------------------------------------->
+                  <div class="controls-body-1 burger__mobile-item w-full absolute top-[105px] md:top-[56px] dark:bg-[#0A0A0A] bg-white border-[1px] dark:border-[#1a1a1a] border-[#E7E7E7] rounded-[8px] p-[15px] lg:p-5 grid-cols-3 grid-flow-row gap-[25px] opacity-0 hidden -translate-y-[30%]">
+                     <div class="controls-body__item">
+                        <div class="controls-body__item-top flex items-end gap-[8px] mb-[16px]">
+                           <h3 class="controls-body__item-title font-accent font-bold dark:text-white text-black">Watch</h3>
+                           <span class="h-[1px] w-full flex bg-[#E7E7E7]"></span>
+                        </div>
+
+                        <div class="controls-body__item-content flex flex-col gap-[12px]">
+                           <a href="#" class="flex items-center justify-between gap-[15px]">
+                              <p class="font-accent font-normal text-black">Lorem ipsum</p>
+                              <span class="font-accent font-normal text-[#AAAAAA]">138</span>
+                           </a>
+                           
+                           <a href="#" class="flex items-center justify-between gap-[15px]">
+                              <p class="font-accent font-normal text-black">Lorem ipsum ipsum</p>
+                              <span class="font-accent font-normal text-[#AAAAAA]">138</span>
+                           </a>
+                           
+                           <a href="#" class="flex items-center justify-between gap-[15px]">
+                              <p class="font-accent font-normal text-black">Lorem ipsum</p>
+                              <span class="font-accent font-normal text-[#AAAAAA]">138</span>
+                           </a>
+                           
+                           <a href="#" class="flex items-center justify-between gap-[15px]">
+                              <p class="font-accent font-normal text-black">Lorem ipsum ipsum</p>
+                              <span class="font-accent font-normal text-[#AAAAAA]">138</span>
+                           </a>
+                           
+                           <a href="#" class="flex items-center justify-between gap-[15px]">
+                              <p class="font-accent font-normal text-black">Lorem ipsum</p>
+                              <span class="font-accent font-normal text-[#AAAAAA]">138</span>
+                           </a>
+
+                           <a href="#" class="flex items-center justify-between gap-[15px]">
+                              <p class="font-accent font-normal text-black">Lorem ipsum ipsum</p>
+                              <span class="font-accent font-normal text-[#AAAAAA]">138</span>
+                           </a>
+                        </div>
+                     </div>
+
+                     <div class="controls-body__item">
+                        <div class="controls-body__item-top flex items-end gap-[8px] mb-[16px]">
+                           <h3 class="controls-body__item-title font-accent font-bold text-black dark:text-white">Watch</h3>
+                           <span class="h-[1px] w-full flex bg-[#E7E7E7]"></span>
+                        </div>
+
+                        <div class="controls-body__item-content flex flex-col gap-[12px]">
+                           <a href="#" class="flex items-center justify-between gap-[15px]">
+                              <p class="font-accent font-normal text-black">Lorem ipsum</p>
+                              <span class="font-accent font-normal text-[#AAAAAA]">138</span>
+                           </a>
+                           
+                           <a href="#" class="flex items-center justify-between gap-[15px]">
+                              <p class="font-accent font-normal text-black">Lorem ipsum ipsum</p>
+                              <span class="font-accent font-normal text-[#AAAAAA]">138</span>
+                           </a>
+                           
+                           <a href="#" class="flex items-center justify-between gap-[15px]">
+                              <p class="font-accent font-normal text-black">Lorem ipsum</p>
+                              <span class="font-accent font-normal text-[#AAAAAA]">138</span>
+                           </a>
+                           
+                           <a href="#" class="flex items-center justify-between gap-[15px]">
+                              <p class="font-accent font-normal text-black">Lorem ipsum ipsum</p>
+                              <span class="font-accent font-normal text-[#AAAAAA]">138</span>
+                           </a>
+                           
+                           <a href="#" class="flex items-center justify-between gap-[15px]">
+                              <p class="font-accent font-normal text-black">Lorem ipsum</p>
+                              <span class="font-accent font-normal text-[#AAAAAA]">138</span>
+                           </a>
+
+                           <a href="#" class="flex items-center justify-between gap-[15px]">
+                              <p class="font-accent font-normal text-black">Lorem ipsum ipsum</p>
+                              <span class="font-accent font-normal text-[#AAAAAA]">138</span>
+                           </a>
+                        </div>
+                     </div>
+
+                     <div class="controls-body__item">
+                        <div class="controls-body__item-top flex items-end gap-[8px] mb-[16px]">
+                           <h3 class="controls-body__item-title font-accent font-bold text-black dark:text-white">Watch</h3>
+                           <span class="h-[1px] w-full flex bg-[#E7E7E7]"></span>
+                        </div>
+
+                        <div class="controls-body__item-content flex flex-col gap-[12px]">
+                           <a href="#" class="flex items-center justify-between gap-[15px]">
+                              <p class="font-accent font-normal text-black">Lorem ipsum</p>
+                              <span class="font-accent font-normal text-[#AAAAAA]">138</span>
+                           </a>
+                           
+                           <a href="#" class="flex items-center justify-between gap-[15px]">
+                              <p class="font-accent font-normal text-black">Lorem ipsum ipsum</p>
+                              <span class="font-accent font-normal text-[#AAAAAA]">138</span>
+                           </a>
+                           
+                           <a href="#" class="flex items-center justify-between gap-[15px]">
+                              <p class="font-accent font-normal text-black">Lorem ipsum</p>
+                              <span class="font-accent font-normal text-[#AAAAAA]">138</span>
+                           </a>
+                           
+                           <a href="#" class="flex items-center justify-between gap-[15px]">
+                              <p class="font-accent font-normal text-black">Lorem ipsum ipsum</p>
+                              <span class="font-accent font-normal text-[#AAAAAA]">138</span>
+                           </a>
+                        </div>
+                     </div>
+
+                     <div class="controls-body__item">
+                        <div class="controls-body__item-top flex items-end gap-[8px] mb-[16px]">
+                           <h3 class="controls-body__item-title font-accent font-bold text-black dark:text-white">Watch</h3>
+                           <span class="h-[1px] w-full flex bg-[#E7E7E7]"></span>
+                        </div>
+
+                        <div class="controls-body__item-content flex flex-col gap-[12px]">
+                           <a href="#" class="flex items-center justify-between gap-[15px]">
+                              <p class="font-accent font-normal text-black">Lorem ipsum</p>
+                              <span class="font-accent font-normal text-[#AAAAAA]">138</span>
+                           </a>
+                           
+                           <a href="#" class="flex items-center justify-between gap-[15px]">
+                              <p class="font-accent font-normal text-black">Lorem ipsum ipsum</p>
+                              <span class="font-accent font-normal text-[#AAAAAA]">138</span>
+                           </a>
+                           
+                           <a href="#" class="flex items-center justify-between gap-[15px]">
+                              <p class="font-accent font-normal text-black">Lorem ipsum</p>
+                              <span class="font-accent font-normal text-[#AAAAAA]">138</span>
+                           </a>
+                           
+                           <a href="#" class="flex items-center justify-between gap-[15px]">
+                              <p class="font-accent font-normal text-black">Lorem ipsum ipsum</p>
+                              <span class="font-accent font-normal text-[#AAAAAA]">138</span>
+                           </a>
+                        </div>
+                     </div>
+
+                     <div class="controls-body__item">
+                        <div class="controls-body__item-top flex items-end gap-[8px] mb-[16px]">
+                           <h3 class="controls-body__item-title font-accent font-bold text-black dark:text-white">Watch</h3>
+                           <span class="h-[1px] w-full flex bg-[#E7E7E7]"></span>
+                        </div>
+
+                        <div class="controls-body__item-content flex flex-col gap-[12px]">
+                           <a href="#" class="flex items-center justify-between gap-[15px]">
+                              <p class="font-accent font-normal text-black">Lorem ipsum</p>
+                              <span class="font-accent font-normal text-[#AAAAAA]">138</span>
+                           </a>
+                           
+                           <a href="#" class="flex items-center justify-between gap-[15px]">
+                              <p class="font-accent font-normal text-black">Lorem ipsum ipsum</p>
+                              <span class="font-accent font-normal text-[#AAAAAA]">138</span>
+                           </a>
+                           
+                           <a href="#" class="flex items-center justify-between gap-[15px]">
+                              <p class="font-accent font-normal text-black">Lorem ipsum</p>
+                              <span class="font-accent font-normal text-[#AAAAAA]">138</span>
+                           </a>
+                           
+                           <a href="#" class="flex items-center justify-between gap-[15px]">
+                              <p class="font-accent font-normal text-black">Lorem ipsum ipsum</p>
+                              <span class="font-accent font-normal text-[#AAAAAA]">138</span>
+                           </a>
+                           
+                           <a href="#" class="flex items-center justify-between gap-[15px]">
+                              <p class="font-accent font-normal text-black">Lorem ipsum</p>
+                              <span class="font-accent font-normal text-[#AAAAAA]">138</span>
+                           </a>
+
+                           <a href="#" class="flex items-center justify-between gap-[15px]">
+                              <p class="font-accent font-normal text-black">Lorem ipsum ipsum</p>
+                              <span class="font-accent font-normal text-[#AAAAAA]">138</span>
+                           </a>
+                        </div>
+                     </div>
+
+                     <div class="controls-body__item">
+                        <div class="controls-body__item-top flex items-end gap-[8px] mb-[16px]">
+                           <h3 class="controls-body__item-title font-accent font-bold text-black dark:text-white">Watch</h3>
+                           <span class="h-[1px] w-full flex bg-[#E7E7E7]"></span>
+                        </div>
+
+                        <div class="controls-body__item-content flex flex-col gap-[12px]">
+                           <a href="#" class="flex items-center justify-between gap-[15px]">
+                              <p class="font-accent font-normal text-black">Lorem ipsum</p>
+                              <span class="font-accent font-normal text-[#AAAAAA]">138</span>
+                           </a>
+                           
+                           <a href="#" class="flex items-center justify-between gap-[15px]">
+                              <p class="font-accent font-normal text-black">Lorem ipsum ipsum</p>
+                              <span class="font-accent font-normal text-[#AAAAAA]">138</span>
+                           </a>
+                           
+                           <a href="#" class="flex items-center justify-between gap-[15px]">
+                              <p class="font-accent font-normal text-black">Lorem ipsum</p>
+                              <span class="font-accent font-normal text-[#AAAAAA]">138</span>
+                           </a>
+                           
+                           <a href="#" class="flex items-center justify-between gap-[15px]">
+                              <p class="font-accent font-normal text-black">Lorem ipsum ipsum</p>
+                              <span class="font-accent font-normal text-[#AAAAAA]">138</span>
+                           </a>
+                           
+                           <a href="#" class="flex items-center justify-between gap-[15px]">
+                              <p class="font-accent font-normal text-black">Lorem ipsum</p>
+                              <span class="font-accent font-normal text-[#AAAAAA]">138</span>
+                           </a>
+
+                           <a href="#" class="flex items-center justify-between gap-[15px]">
+                              <p class="font-accent font-normal text-black">Lorem ipsum ipsum</p>
+                              <span class="font-accent font-normal text-[#AAAAAA]">138</span>
+                           </a>
+                        </div>
+                     </div>
+                  </div>
+
+                  <div class="controls-body-2 burger__mobile-item w-full absolute top-[161px] md:top-[56px] dark:bg-[#0A0A0A] bg-white border-[1px] dark:border-[#1a1a1a] border-[#E7E7E7] rounded-[8px] p-[15px] lg:p-5 grid-cols-3 grid-flow-row gap-[25px] opacity-0 hidden -translate-y-[30%]">
+                     <div class="controls-body__item">
+                        <div class="controls-body__item-top flex items-end gap-[8px] mb-[16px]">
+                           <h3 class="controls-body__item-title font-accent font-bold text-black dark:text-white">Watch</h3>
+                           <span class="h-[1px] w-full flex bg-[#E7E7E7]"></span>
+                        </div>
+
+                        <div class="controls-body__item-content flex flex-col gap-[12px]">
+                           <a href="#" class="flex items-center justify-between gap-[15px]">
+                              <p class="font-accent font-normal text-black">Lorem ipsum</p>
+                              <span class="font-accent font-normal text-[#AAAAAA]">138</span>
+                           </a>
+                           
+                           <a href="#" class="flex items-center justify-between gap-[15px]">
+                              <p class="font-accent font-normal text-black">Lorem ipsum ipsum</p>
+                              <span class="font-accent font-normal text-[#AAAAAA]">138</span>
+                           </a>
+                           
+                           <a href="#" class="flex items-center justify-between gap-[15px]">
+                              <p class="font-accent font-normal text-black">Lorem ipsum</p>
+                              <span class="font-accent font-normal text-[#AAAAAA]">138</span>
+                           </a>
+                           
+                           <a href="#" class="flex items-center justify-between gap-[15px]">
+                              <p class="font-accent font-normal text-black">Lorem ipsum ipsum</p>
+                              <span class="font-accent font-normal text-[#AAAAAA]">138</span>
+                           </a>
+                           
+                           <a href="#" class="flex items-center justify-between gap-[15px]">
+                              <p class="font-accent font-normal text-black">Lorem ipsum</p>
+                              <span class="font-accent font-normal text-[#AAAAAA]">138</span>
+                           </a>
+
+                           <a href="#" class="flex items-center justify-between gap-[15px]">
+                              <p class="font-accent font-normal text-black">Lorem ipsum ipsum</p>
+                              <span class="font-accent font-normal text-[#AAAAAA]">138</span>
+                           </a>
+                        </div>
+                     </div>
+
+                     <div class="controls-body__item">
+                        <div class="controls-body__item-top flex items-end gap-[8px] mb-[16px]">
+                           <h3 class="controls-body__item-title font-accent font-bold text-black dark:text-white">Watch</h3>
+                           <span class="h-[1px] w-full flex bg-[#E7E7E7]"></span>
+                        </div>
+
+                        <div class="controls-body__item-content flex flex-col gap-[12px]">
+                           <a href="#" class="flex items-center justify-between gap-[15px]">
+                              <p class="font-accent font-normal text-black">Lorem ipsum</p>
+                              <span class="font-accent font-normal text-[#AAAAAA]">138</span>
+                           </a>
+                           
+                           <a href="#" class="flex items-center justify-between gap-[15px]">
+                              <p class="font-accent font-normal text-black">Lorem ipsum ipsum</p>
+                              <span class="font-accent font-normal text-[#AAAAAA]">138</span>
+                           </a>
+                           
+                           <a href="#" class="flex items-center justify-between gap-[15px]">
+                              <p class="font-accent font-normal text-black">Lorem ipsum</p>
+                              <span class="font-accent font-normal text-[#AAAAAA]">138</span>
+                           </a>
+                           
+                           <a href="#" class="flex items-center justify-between gap-[15px]">
+                              <p class="font-accent font-normal text-black">Lorem ipsum ipsum</p>
+                              <span class="font-accent font-normal text-[#AAAAAA]">138</span>
+                           </a>
+                           
+                           <a href="#" class="flex items-center justify-between gap-[15px]">
+                              <p class="font-accent font-normal text-black">Lorem ipsum</p>
+                              <span class="font-accent font-normal text-[#AAAAAA]">138</span>
+                           </a>
+
+                           <a href="#" class="flex items-center justify-between gap-[15px]">
+                              <p class="font-accent font-normal text-black">Lorem ipsum ipsum</p>
+                              <span class="font-accent font-normal text-[#AAAAAA]">138</span>
+                           </a>
+                        </div>
+                     </div>
+                     
+                     <div class="controls-body__item">
+                        <div class="controls-body__item-top flex items-end gap-[8px] mb-[16px]">
+                           <h3 class="controls-body__item-title font-accent font-bold text-black dark:text-white">Watch</h3>
+                           <span class="h-[1px] w-full flex bg-[#E7E7E7]"></span>
+                        </div>
+
+                        <div class="controls-body__item-content flex flex-col gap-[12px]">
+                           <a href="#" class="flex items-center justify-between gap-[15px]">
+                              <p class="font-accent font-normal text-black">Lorem ipsum</p>
+                              <span class="font-accent font-normal text-[#AAAAAA]">138</span>
+                           </a>
+                           
+                           <a href="#" class="flex items-center justify-between gap-[15px]">
+                              <p class="font-accent font-normal text-black">Lorem ipsum ipsum</p>
+                              <span class="font-accent font-normal text-[#AAAAAA]">138</span>
+                           </a>
+                           
+                           <a href="#" class="flex items-center justify-between gap-[15px]">
+                              <p class="font-accent font-normal text-black">Lorem ipsum</p>
+                              <span class="font-accent font-normal text-[#AAAAAA]">138</span>
+                           </a>
+                           
+                           <a href="#" class="flex items-center justify-between gap-[15px]">
+                              <p class="font-accent font-normal text-black">Lorem ipsum ipsum</p>
+                              <span class="font-accent font-normal text-[#AAAAAA]">138</span>
+                           </a>
+                           
+                           <a href="#" class="flex items-center justify-between gap-[15px]">
+                              <p class="font-accent font-normal text-black">Lorem ipsum</p>
+                              <span class="font-accent font-normal text-[#AAAAAA]">138</span>
+                           </a>
+
+                           <a href="#" class="flex items-center justify-between gap-[15px]">
+                              <p class="font-accent font-normal text-black">Lorem ipsum ipsum</p>
+                              <span class="font-accent font-normal text-[#AAAAAA]">138</span>
+                           </a>
+                        </div>
+                     </div>
+
+                     <div class="controls-body__item">
+                        <div class="controls-body__item-top flex items-end gap-[8px] mb-[16px]">
+                           <h3 class="controls-body__item-title font-accent font-bold text-black dark:text-white">Watch</h3>
+                           <span class="h-[1px] w-full flex bg-[#E7E7E7]"></span>
+                        </div>
+
+                        <div class="controls-body__item-content flex flex-col gap-[12px]">
+                           <a href="#" class="flex items-center justify-between gap-[15px]">
+                              <p class="font-accent font-normal text-black">Lorem ipsum</p>
+                              <span class="font-accent font-normal text-[#AAAAAA]">138</span>
+                           </a>
+                           
+                           <a href="#" class="flex items-center justify-between gap-[15px]">
+                              <p class="font-accent font-normal text-black">Lorem ipsum ipsum</p>
+                              <span class="font-accent font-normal text-[#AAAAAA]">138</span>
+                           </a>
+                           
+                           <a href="#" class="flex items-center justify-between gap-[15px]">
+                              <p class="font-accent font-normal text-black">Lorem ipsum</p>
+                              <span class="font-accent font-normal text-[#AAAAAA]">138</span>
+                           </a>
+                           
+                           <a href="#" class="flex items-center justify-between gap-[15px]">
+                              <p class="font-accent font-normal text-black">Lorem ipsum ipsum</p>
+                              <span class="font-accent font-normal text-[#AAAAAA]">138</span>
+                           </a>
+                           
+                           <a href="#" class="flex items-center justify-between gap-[15px]">
+                              <p class="font-accent font-normal text-black">Lorem ipsum</p>
+                              <span class="font-accent font-normal text-[#AAAAAA]">138</span>
+                           </a>
+
+                           <a href="#" class="flex items-center justify-between gap-[15px]">
+                              <p class="font-accent font-normal text-black">Lorem ipsum ipsum</p>
+                              <span class="font-accent font-normal text-[#AAAAAA]">138</span>
+                           </a>
+                        </div>
+                     </div>
+                  </div>
+
+                  <div class="controls-body-3 burger__mobile-item w-full absolute top-[217px] md:top-[56px] dark:bg-[#0A0A0A] bg-white border-[1px] dark:border-[#1a1a1a] border-[#E7E7E7] rounded-[8px] p-[15px] lg:p-5 grid-cols-3 grid-flow-row gap-[25px] opacity-0 hidden -translate-y-[30%]">
+                     <div class="controls-body__item">
+                        <div class="controls-body__item-top flex items-end gap-[8px] mb-[16px]">
+                           <h3 class="controls-body__item-title font-accent font-bold text-black dark:text-white">Watch</h3>
+                           <span class="h-[1px] w-full flex bg-[#E7E7E7]"></span>
+                        </div>
+
+                        <div class="controls-body__item-content flex flex-col gap-[12px]">
+                           <a href="#" class="flex items-center justify-between gap-[15px]">
+                              <p class="font-accent font-normal text-black">Lorem ipsum</p>
+                              <span class="font-accent font-normal text-[#AAAAAA]">138</span>
+                           </a>
+                           
+                           <a href="#" class="flex items-center justify-between gap-[15px]">
+                              <p class="font-accent font-normal text-black">Lorem ipsum ipsum</p>
+                              <span class="font-accent font-normal text-[#AAAAAA]">138</span>
+                           </a>
+                           
+                           <a href="#" class="flex items-center justify-between gap-[15px]">
+                              <p class="font-accent font-normal text-black">Lorem ipsum</p>
+                              <span class="font-accent font-normal text-[#AAAAAA]">138</span>
+                           </a>
+                           
+                           <a href="#" class="flex items-center justify-between gap-[15px]">
+                              <p class="font-accent font-normal text-black">Lorem ipsum ipsum</p>
+                              <span class="font-accent font-normal text-[#AAAAAA]">138</span>
+                           </a>
+                           
+                           <a href="#" class="flex items-center justify-between gap-[15px]">
+                              <p class="font-accent font-normal text-black">Lorem ipsum</p>
+                              <span class="font-accent font-normal text-[#AAAAAA]">138</span>
+                           </a>
+
+                           <a href="#" class="flex items-center justify-between gap-[15px]">
+                              <p class="font-accent font-normal text-black">Lorem ipsum ipsum</p>
+                              <span class="font-accent font-normal text-[#AAAAAA]">138</span>
+                           </a>
+                        </div>
+                     </div>
+
+                     <div class="controls-body__item">
+                        <div class="controls-body__item-top flex items-end gap-[8px] mb-[16px]">
+                           <h3 class="controls-body__item-title font-accent font-bold text-black dark:text-white">Watch</h3>
+                           <span class="h-[1px] w-full flex bg-[#E7E7E7]"></span>
+                        </div>
+
+                        <div class="controls-body__item-content flex flex-col gap-[12px]">
+                           <a href="#" class="flex items-center justify-between gap-[15px]">
+                              <p class="font-accent font-normal text-black">Lorem ipsum</p>
+                              <span class="font-accent font-normal text-[#AAAAAA]">138</span>
+                           </a>
+                           
+                           <a href="#" class="flex items-center justify-between gap-[15px]">
+                              <p class="font-accent font-normal text-black">Lorem ipsum ipsum</p>
+                              <span class="font-accent font-normal text-[#AAAAAA]">138</span>
+                           </a>
+                           
+                           <a href="#" class="flex items-center justify-between gap-[15px]">
+                              <p class="font-accent font-normal text-black">Lorem ipsum</p>
+                              <span class="font-accent font-normal text-[#AAAAAA]">138</span>
+                           </a>
+                           
+                           <a href="#" class="flex items-center justify-between gap-[15px]">
+                              <p class="font-accent font-normal text-black">Lorem ipsum ipsum</p>
+                              <span class="font-accent font-normal text-[#AAAAAA]">138</span>
+                           </a>
+                           
+                           <a href="#" class="flex items-center justify-between gap-[15px]">
+                              <p class="font-accent font-normal text-black">Lorem ipsum</p>
+                              <span class="font-accent font-normal text-[#AAAAAA]">138</span>
+                           </a>
+
+                           <a href="#" class="flex items-center justify-between gap-[15px]">
+                              <p class="font-accent font-normal text-black">Lorem ipsum ipsum</p>
+                              <span class="font-accent font-normal text-[#AAAAAA]">138</span>
+                           </a>
+                        </div>
+                     </div>
+
+                     <div class="controls-body__item">
+                        <div class="controls-body__item-top flex items-end gap-[8px] mb-[16px]">
+                           <h3 class="controls-body__item-title font-accent font-bold text-black dark:text-white">Watch</h3>
+                           <span class="h-[1px] w-full flex bg-[#E7E7E7]"></span>
+                        </div>
+
+                        <div class="controls-body__item-content flex flex-col gap-[12px]">
+                           <a href="#" class="flex items-center justify-between gap-[15px]">
+                              <p class="font-accent font-normal text-black">Lorem ipsum</p>
+                              <span class="font-accent font-normal text-[#AAAAAA]">138</span>
+                           </a>
+                           
+                           <a href="#" class="flex items-center justify-between gap-[15px]">
+                              <p class="font-accent font-normal text-black">Lorem ipsum ipsum</p>
+                              <span class="font-accent font-normal text-[#AAAAAA]">138</span>
+                           </a>
+                           
+                           <a href="#" class="flex items-center justify-between gap-[15px]">
+                              <p class="font-accent font-normal text-black">Lorem ipsum</p>
+                              <span class="font-accent font-normal text-[#AAAAAA]">138</span>
+                           </a>
+                           
+                           <a href="#" class="flex items-center justify-between gap-[15px]">
+                              <p class="font-accent font-normal text-black">Lorem ipsum ipsum</p>
+                              <span class="font-accent font-normal text-[#AAAAAA]">138</span>
+                           </a>
+                        </div>
+                     </div>
+
+                     <div class="controls-body__item">
+                        <div class="controls-body__item-top flex items-end gap-[8px] mb-[16px]">
+                           <h3 class="controls-body__item-title font-accent font-bold text-black dark:text-white">Watch</h3>
+                           <span class="h-[1px] w-full flex bg-[#E7E7E7]"></span>
+                        </div>
+
+                        <div class="controls-body__item-content flex flex-col gap-[12px]">
+                           <a href="#" class="flex items-center justify-between gap-[15px]">
+                              <p class="font-accent font-normal text-black">Lorem ipsum</p>
+                              <span class="font-accent font-normal text-[#AAAAAA]">138</span>
+                           </a>
+                           
+                           <a href="#" class="flex items-center justify-between gap-[15px]">
+                              <p class="font-accent font-normal text-black">Lorem ipsum ipsum</p>
+                              <span class="font-accent font-normal text-[#AAAAAA]">138</span>
+                           </a>
+                           
+                           <a href="#" class="flex items-center justify-between gap-[15px]">
+                              <p class="font-accent font-normal text-black">Lorem ipsum</p>
+                              <span class="font-accent font-normal text-[#AAAAAA]">138</span>
+                           </a>
+                           
+                           <a href="#" class="flex items-center justify-between gap-[15px]">
+                              <p class="font-accent font-normal text-black">Lorem ipsum ipsum</p>
+                              <span class="font-accent font-normal text-[#AAAAAA]">138</span>
+                           </a>
+                        </div>
+                     </div>
+
+                     <div class="controls-body__item">
+                        <div class="controls-body__item-top flex items-end gap-[8px] mb-[16px]">
+                           <h3 class="controls-body__item-title font-accent font-bold text-black dark:text-white">Watch</h3>
+                           <span class="h-[1px] w-full flex bg-[#E7E7E7]"></span>
+                        </div>
+
+                        <div class="controls-body__item-content flex flex-col gap-[12px]">
+                           <a href="#" class="flex items-center justify-between gap-[15px]">
+                              <p class="font-accent font-normal text-black">Lorem ipsum</p>
+                              <span class="font-accent font-normal text-[#AAAAAA]">138</span>
+                           </a>
+                           
+                           <a href="#" class="flex items-center justify-between gap-[15px]">
+                              <p class="font-accent font-normal text-black">Lorem ipsum ipsum</p>
+                              <span class="font-accent font-normal text-[#AAAAAA]">138</span>
+                           </a>
+                           
+                           <a href="#" class="flex items-center justify-between gap-[15px]">
+                              <p class="font-accent font-normal text-black">Lorem ipsum</p>
+                              <span class="font-accent font-normal text-[#AAAAAA]">138</span>
+                           </a>
+                           
+                           <a href="#" class="flex items-center justify-between gap-[15px]">
+                              <p class="font-accent font-normal text-black">Lorem ipsum ipsum</p>
+                              <span class="font-accent font-normal text-[#AAAAAA]">138</span>
+                           </a>
+                           
+                           <a href="#" class="flex items-center justify-between gap-[15px]">
+                              <p class="font-accent font-normal text-black">Lorem ipsum</p>
+                              <span class="font-accent font-normal text-[#AAAAAA]">138</span>
+                           </a>
+
+                           <a href="#" class="flex items-center justify-between gap-[15px]">
+                              <p class="font-accent font-normal text-black">Lorem ipsum ipsum</p>
+                              <span class="font-accent font-normal text-[#AAAAAA]">138</span>
+                           </a>
+                        </div>
+                     </div>
+                  </div>
+
+                  <div class="controls-body-4 burger__mobile-item w-full absolute top-[273px] md:top-[56px] dark:bg-[#0A0A0A] bg-white border-[1px] dark:border-[#1a1a1a] border-[#E7E7E7] rounded-[8px] p-[15px] lg:p-5 grid-cols-3 grid-flow-row gap-[25px] opacity-0 hidden -translate-y-[30%]">
+                     <div class="controls-body__item">
+                        <div class="controls-body__item-top flex items-end gap-[8px] mb-[16px]">
+                           <h3 class="controls-body__item-title font-accent font-bold text-black dark:text-white">Watch</h3>
+                           <span class="h-[1px] w-full flex bg-[#E7E7E7]"></span>
+                        </div>
+
+                        <div class="controls-body__item-content flex flex-col gap-[12px]">
+                           <a href="#" class="flex items-center justify-between gap-[15px]">
+                              <p class="font-accent font-normal text-black">Lorem ipsum</p>
+                              <span class="font-accent font-normal text-[#AAAAAA]">138</span>
+                           </a>
+                           
+                           <a href="#" class="flex items-center justify-between gap-[15px]">
+                              <p class="font-accent font-normal text-black">Lorem ipsum ipsum</p>
+                              <span class="font-accent font-normal text-[#AAAAAA]">138</span>
+                           </a>
+                           
+                           <a href="#" class="flex items-center justify-between gap-[15px]">
+                              <p class="font-accent font-normal text-black">Lorem ipsum</p>
+                              <span class="font-accent font-normal text-[#AAAAAA]">138</span>
+                           </a>
+                           
+                           <a href="#" class="flex items-center justify-between gap-[15px]">
+                              <p class="font-accent font-normal text-black">Lorem ipsum ipsum</p>
+                              <span class="font-accent font-normal text-[#AAAAAA]">138</span>
+                           </a>
+                           
+                           <a href="#" class="flex items-center justify-between gap-[15px]">
+                              <p class="font-accent font-normal text-black">Lorem ipsum</p>
+                              <span class="font-accent font-normal text-[#AAAAAA]">138</span>
+                           </a>
+
+                           <a href="#" class="flex items-center justify-between gap-[15px]">
+                              <p class="font-accent font-normal text-black">Lorem ipsum ipsum</p>
+                              <span class="font-accent font-normal text-[#AAAAAA]">138</span>
+                           </a>
+                        </div>
+                     </div>
+
+                     <div class="controls-body__item">
+                        <div class="controls-body__item-top flex items-end gap-[8px] mb-[16px]">
+                           <h3 class="controls-body__item-title font-accent font-bold text-black dark:text-white">Watch</h3>
+                           <span class="h-[1px] w-full flex bg-[#E7E7E7]"></span>
+                        </div>
+
+                        <div class="controls-body__item-content flex flex-col gap-[12px]">
+                           <a href="#" class="flex items-center justify-between gap-[15px]">
+                              <p class="font-accent font-normal text-black">Lorem ipsum</p>
+                              <span class="font-accent font-normal text-[#AAAAAA]">138</span>
+                           </a>
+                           
+                           <a href="#" class="flex items-center justify-between gap-[15px]">
+                              <p class="font-accent font-normal text-black">Lorem ipsum ipsum</p>
+                              <span class="font-accent font-normal text-[#AAAAAA]">138</span>
+                           </a>
+                           
+                           <a href="#" class="flex items-center justify-between gap-[15px]">
+                              <p class="font-accent font-normal text-black">Lorem ipsum</p>
+                              <span class="font-accent font-normal text-[#AAAAAA]">138</span>
+                           </a>
+                           
+                           <a href="#" class="flex items-center justify-between gap-[15px]">
+                              <p class="font-accent font-normal text-black">Lorem ipsum ipsum</p>
+                              <span class="font-accent font-normal text-[#AAAAAA]">138</span>
+                           </a>
+                           
+                           <a href="#" class="flex items-center justify-between gap-[15px]">
+                              <p class="font-accent font-normal text-black">Lorem ipsum</p>
+                              <span class="font-accent font-normal text-[#AAAAAA]">138</span>
+                           </a>
+
+                           <a href="#" class="flex items-center justify-between gap-[15px]">
+                              <p class="font-accent font-normal text-black">Lorem ipsum ipsum</p>
+                              <span class="font-accent font-normal text-[#AAAAAA]">138</span>
+                           </a>
+                        </div>
+                     </div>
+                  </div>
+
+                  <div class="controls-body-5 burger__mobile-item w-full absolute top-0 left-0 right-0 bottom-0 md:top-[56px] dark:bg-black bg-white border-none md:border-[1px] border-[#E7E7E7] rounded-[8px] p-0 md:p-[15px] lg:p-5 grid-cols-3 grid-flow-row gap-[25px] opacity-0 hidden -translate-y-[30%]">
+                     <div class="burger-lang flex items-center gap-[12px]">
+                     <button>
+                           <svg class="lang__arrow w-[14px] h-[7px] fill-accent ml-auto flex flex-shrink-0 -rotate-90">
+                              <use xlink:href="#arrow-up"></use>
+                           </svg>
+                     </button>
+
+                        <h3 class="burger-lang__title font-main font-bold text-[20px] dark:text-white text-black">Choose language</h3>
+                     </div>
+
+                     <div class="lang__inner flex flex-col gap-5 overflow-y-auto w-full">
+                           <a href="#" class="lang__item hover:text-accent flex items-centr gap-[15px]">
+                              <img class="lang__icon w-[30px] h-[24px]" src="./img/cestina.svg" alt="icon">
+                              <span class="font-main font-bold text-black text-[16px] dark:text-white">Čeština</span>
+                           </a>
+                           
+                           <a href="#" class="lang__item hover:text-accent flex items-centr gap-[15px] hover">
+                              <img class="lang__icon w-[30px] h-[24px]" src="./img/danske.svg" alt="icon">
+                              <span class="font-main font-bold text-black text-[16px] dark:text-white">Danske</span>
+                           </a>
+                           
+                           <a href="#" class="lang__item hover:text-accent flex items-centr gap-[15px] hover">
+                              <img class="lang__icon w-[30px] h-[24px]" src="./img/deutsch.svg" alt="icon">
+                              <span class="font-main font-bold text-black text-[16px] dark:text-white">Deutsch</span>
+                           </a>
+                           
+                           <a href="#" class="lang__item hover:text-accent flex items-centr gap-[15px] hover">
+                              <img class="lang__icon w-[30px] h-[24px]" src="./img/eestikeel.svg" alt="icon">
+                              <span class="font-main font-bold text-black text-[16px] dark:text-white">Eesti keel</span>
+                           </a>
+                           
+                           <a href="#" class="lang__item active hover:text-accent flex items-centr gap-[15px] hover">
+                              <img class="lang__icon w-[30px] h-[24px]" src="./img/usa.svg" alt="icon">
+                              <span class="font-main font-bold text-black text-[16px] dark:text-white">English</span>
+                           </a>
+                           
+                           <a href="#" class="lang__item hover:text-accent flex items-centr gap-[15px] hover">
+                              <img class="lang__icon w-[30px] h-[24px]" src="./img/espanol.svg" alt="icon">
+                              <span class="font-main font-bold text-black text-[16px] dark:text-white">Español</span>
+                           </a>
+                           
+                           <a href="#" class="lang__item hover:text-accent flex items-centr gap-[15px] hover">
+                              <img class="lang__icon w-[30px] h-[24px]" src="./img/francais.svg" alt="icon">
+                              <span class="font-main font-bold text-black text-[16px] dark:text-white">Français</span>
+                           </a>
+                           
+                           <a href="#" class="lang__item hover:text-accent flex items-centr gap-[15px] hover">
+                              <img class="lang__icon w-[30px] h-[24px]" src="./img/gaeilge.svg" alt="icon">
+                              <span class="font-main font-bold text-black text-[16px] dark:text-white">Gaeilge</span>
+                           </a>
+                           
+                           <a href="#" class="lang__item hover:text-accent flex items-centr gap-[15px] hover">
+                              <img class="lang__icon w-[30px] h-[24px]" src="./img/hrvatski.svg" alt="icon">
+                              <span class="font-main font-bold text-black text-[16px] dark:text-white">Hrvatski</span>
+                           </a>
+                           
+                           <a href="#" class="lang__item hover:text-accent flex items-centr gap-[15px] hover">
+                              <img class="lang__icon w-[30px] h-[24px]" src="./img/italiano.svg" alt="icon">
+                              <span class="font-main font-bold text-black text-[16px] dark:text-white">Italiano</span>
+                           </a>
+                        
+                           <a href="#" class="lang__item hover:text-accent flex items-centr gap-[15px] hover">
+                              <img class="lang__icon w-[30px] h-[24px]" src="./img/latviesu.svg" alt="icon">
+                              <span class="font-main font-bold text-black text-[16px] dark:text-white">Latviešu</span>
+                           </a>
+                     
+                           <a href="#" class="lang__item hover:text-accent flex items-centr gap-[15px] hover">
+                              <img class="lang__icon w-[30px] h-[24px]" src="./img/lietuvie.svg" alt="icon">
+                              <span class="font-main font-bold text-black text-[16px] dark:text-white">Lietuvių</span>
+                           </a>
+
+                           <a href="#" class="lang__item hover:text-accent flex items-centr gap-[15px] hover">
+                              <img class="lang__icon w-[30px] h-[24px]" src="./img/magyar.svg" alt="icon">
+                              <span class="font-main font-bold text-black text-[16px] dark:text-white">Magyar</span>
+                           </a>
+
+                           <a href="#" class="lang__item hover:text-accent flex items-centr gap-[15px] hover">
+                              <img class="lang__icon w-[30px] h-[24px]" src="./img/malti.svg" alt="icon">
+                              <span class="font-main font-bold text-black text-[16px] dark:text-white">Malti</span>
+                           </a>
+
+                           <a href="#" class="lang__item hover:text-accent flex items-centr gap-[15px] hover">
+                              <img class="lang__icon w-[30px] h-[24px]" src="./img/nederlandse.svg" alt="icon">
+                              <span class="font-main font-bold text-black text-[16px] dark:text-white">Nederlandse</span>
+                           </a>
+
+                           <a href="#" class="lang__item hover:text-accent flex items-centr gap-[15px] hover">
+                              <img class="lang__icon w-[30px] h-[24px]" src="./img/norsk.svg" alt="icon">
+                              <span class="font-main font-bold text-black text-[16px] dark:text-white">Norsk</span>
+                           </a>
+
+                           <a href="#" class="lang__item hover:text-accent flex items-centr gap-[15px] hover">
+                              <img class="lang__icon w-[30px] h-[24px]" src="./img/polskie.svg" alt="icon">
+                              <span class="font-main font-bold text-black text-[16px] dark:text-white">Polskie</span>
+                           </a>
+
+                           <a href="#" class="lang__item hover:text-accent flex items-centr gap-[15px] hover">
+                              <img class="lang__icon w-[30px] h-[24px]" src="./img/portugues.svg" alt="icon">
+                              <span class="font-main font-bold text-black text-[16px] dark:text-white">Português</span>
+                           </a>
+
+                           <a href="#" class="lang__item hover:text-accent flex items-centr gap-[15px] hover">
+                              <img class="lang__icon w-[30px] h-[24px]" src="./img/romana.svg" alt="icon">
+                              <span class="font-main font-bold text-black text-[16px] dark:text-white">Română</span>
+                           </a>
+
+                           <a href="#" class="lang__item hover:text-accent flex items-centr gap-[15px] hover">
+                              <img class="lang__icon w-[30px] h-[24px]" src="./img/slovencia.svg" alt="icon">
+                              <span class="font-main font-bold text-black text-[16px] dark:text-white">Slovenčina</span>
+                           </a>
+
+                           <a href="#" class="lang__item hover:text-accent flex items-centr gap-[15px] hover">
+                              <img class="lang__icon w-[30px] h-[24px]" src="./img/slovenscia.svg" alt="icon">
+                              <span class="font-main font-bold text-black text-[16px] dark:text-white">Slovenščina</span>
+                           </a>
+
+                           <a href="#" class="lang__item hover:text-accent flex items-centr gap-[15px] hover">
+                              <img class="lang__icon w-[30px] h-[24px]" src="./img/suomenkieli.svg" alt="icon">
+                              <span class="font-main font-bold text-black text-[16px] dark:text-white">Suomen kieli</span>
+                           </a>
+
+                           <a href="#" class="lang__item hover:text-accent flex items-centr gap-[15px] hover">
+                              <img class="lang__icon w-[30px] h-[24px]" src="./img/svenska.svg" alt="icon">
+                              <span class="font-main font-bold text-black text-[16px] dark:text-white">Svenska</span>
+                           </a>
+
+                           <a href="#" class="lang__item hover:text-accent flex items-centr gap-[15px] hover">
+                              <img class="lang__icon w-[30px] h-[24px]" src="./img/tiengviet.svg" alt="icon">
+                              <span class="font-main font-bold text-black text-[16px] dark:text-white">Tiếng Việt</span>
+                           </a>
+
+                           <a href="#" class="lang__item hover:text-accent flex items-centr gap-[15px] hover">
+                              <img class="lang__icon w-[30px] h-[24px]" src="./img/turke.svg" alt="icon">
+                              <span class="font-main font-bold text-black text-[16px] dark:text-white">Türkçe</span>
+                           </a>
+
+                           <a href="#" class="lang__item hover:text-accent flex items-centr gap-[15px] hover">
+                              <img class="lang__icon w-[30px] h-[24px]" src="./img/greece.svg" alt="icon">
+                              <span class="font-main font-bold text-black text-[16px] dark:text-white">Ελληνική</span>
+                           </a>
+
+                           <a href="#" class="lang__item hover:text-accent flex items-centr gap-[15px] hover">
+                              <img class="lang__icon w-[30px] h-[24px]" src="./img/bolgarie.svg" alt="icon">
+                              <span class="font-main font-bold text-black text-[16px] dark:text-white">Български</span>
+                           </a>
+
+                           <a href="#" class="lang__item hover:text-accent flex items-centr gap-[15px] hover">
+                              <img class="lang__icon w-[30px] h-[24px]" src="./img/russia.svg" alt="icon">
+                              <span class="font-main font-bold text-black text-[16px] dark:text-white">Руссский</span>
+                           </a>
+
+                           <a href="#" class="lang__item hover:text-accent flex items-centr gap-[15px] hover">
+                              <img class="lang__icon w-[30px] h-[24px]" src="./img/israel.svg" alt="icon">
+                              <span class="font-main font-bold text-black text-[16px] dark:text-white">עברית</span>
+                           </a>
+
+                           <a href="#" class="lang__item hover:text-accent flex items-centr gap-[15px] hover">
+                              <img class="lang__icon w-[30px] h-[24px]" src="./img/arabish.svg" alt="icon">
+                              <span class="font-main font-bold text-black text-[16px] dark:text-white">العربية</span>
+                           </a>
+
+                           <a href="#" class="lang__item hover:text-accent flex items-centr gap-[15px] hover">
+                              <img class="lang__icon w-[30px] h-[24px]" src="./img/india.svg" alt="icon">
+                              <span class="font-main font-bold text-black text-[16px] dark:text-white">हिन्दी</span>
+                           </a>
+
+                           <a href="#" class="lang__item hover:text-accent flex items-centr gap-[15px] hover">
+                              <img class="lang__icon w-[30px] h-[24px]" src="./img/china.svg" alt="icon">
+                              <span class="font-main font-bold text-black text-[16px] dark:text-white">中文</span>
+                           </a>
+
+                           <a href="#" class="lang__item hover:text-accent flex items-centr gap-[15px] hover">
+                              <img class="lang__icon w-[30px] h-[24px]" src="./img/japan.svg" alt="icon">
+                              <span class="font-main font-bold text-black text-[16px] dark:text-white">日本語</span>
+                           </a>
+                     </div>
+                  </div>
+                  <!---------------------------------------------------------->
+
+
+                  
+
+               </div>
+            </div>
+
+            <div class="main-inner mt-0 md:mt-6">
+               <h2 class="main-title font-main font-bold text-[20px] md:text-[32px] dark:text-white text-black dark:text mb-6">Free videos</h2>
+
+               <div class="main-content grid grid-cols-1 mmd:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 grid-flow-row gap-x-[16px] gap-y-[24px] mb-[32px] md:mb-[45px]">
+                  <div class="main-content__item">
+                     <div class="main-content__image relative pb-[56%] overflow-hidden rounded-[12px] mb-[8px]">
+                        <img class="absolute top-0 left-0 right-0 bottom-0 w-full h-full object-cover" src="./img/picture.jpg" alt="Img">
+
+                        <button class="heart-label hover absolute bg-[rgba(0,0,0,0.69)] top-[8px] left-[8px] rounded-[7px] flex items-center justify-center min-w-[26px] h-[26px]">
+                           <svg class="w-[18px] h-[18px] fill-[#fff]">
+                              <use xlink:href="#heart"></use>
+                           </svg>
+                        </button>
+                        
+                        <button class="time-label hover absolute bg-[rgba(0,0,0,0.69)] rounded-[7px] top-[8px] left-[38px] flex items-center justify-center min-w-[26px] h-[26px]">
+                           <svg class="w-[18px] h-[18px] fill-[#fff]">
+                              <use xlink:href="#time"></use>
+                           </svg>
+                        </button>
+                        
+                        <div class="touch-label md:hidden absolute bg-[rgba(0,0,0,0.69)] bottom-[8px] left-[8px] rounded-[7px] flex items-center justify-center min-w-[26px] h-[26px]">
+                           <img width="16" height="16" class="" src="./img/touch.svg" alt="Img">
+                        </div>
+
+                        <div class="hd-label absolute font-main font-bold text-[12px] text-white top-[8px] right-[8px] rounded-[7px] bg-[rgba(0,0,0,0.69)] flex items-center justify-center min-w-[26px] h-[26px]">
+                           HD
+                        </div>
+
+                        <div class="absolute px-[4px] gap-[6px] font-main font-normal text-[12px] text-white bottom-[8px] right-[8px] rounded-[7px] bg-[rgba(0,0,0,0.69)] flex items-center justify-center min-w-[26px] h-[26px]">
+                           <img width="16" height="16" class="" src="./img/clock.svg" alt="Img">
+                           <span>28:00</span>
+                        </div>
+                     </div>
+
+                     <a href="index-2.html" class="main-content__item-link font-accent font-medium text-[16px] dark:text-white text-black hover dark:hover:text-accent hover:text-accent">Watch dolor sit amet consectetur adipisicing elit. Expedita suscipit recusandae minima illum dicta odit corrupti pariatur.</a>
+                 
+                     <div class="main-content__bottom-controls mt-[8px] flex items-center gap-[10px]">
+                        <div class="main-content__bottom-item flex items-center gap-[6px] mr-auto">
+                           <img class="w-[16px] h-[16px]" src="./img/calendar.svg" alt="Img">
+                           <span class="font-main font-normal text-[12px] dark:text-white text-black">19 hours ago</span>
+                        </div>
+                        
+                        <div class="main-content__bottom-item flex items-center gap-[6px]">
+                           <img class="w-[16px] h-[16px]" src="./img/eye.svg" alt="Img">
+                           <span class="font-main font-normal dark:text-white text-[12px] text-black">13k</span>
+                        </div>
+                        
+                        <div class="main-content__bottom-item flex items-center gap-[6px]">
+                           <img class="w-[16px] h-[16px]" src="./img/like.svg" alt="Img">
+                           <span class="font-main font-normal dark:text-white text-[12px] text-black">100%</span>
+                        </div>
+                     </div>
+                  </div>
+
+                  <div class="main-content__item">
+                     <div class="main-content__image relative pb-[56%] overflow-hidden rounded-[12px] mb-[8px]">
+                        <img class="absolute top-0 left-0 right-0 bottom-0 w-full h-full object-cover" src="./img/picture-3.jpg" alt="Img">
+
+                        <button class="heart-label hover absolute bg-[rgba(0,0,0,0.69)] top-[8px] left-[8px] rounded-[7px] flex items-center justify-center min-w-[26px] h-[26px]">
+                           <svg class="w-[18px] h-[18px] fill-[#fff]">
+                              <use xlink:href="#heart"></use>
+                           </svg>
+                        </button>
+                        
+                        <button class="time-label hover absolute bg-[rgba(0,0,0,0.69)] rounded-[7px] top-[8px] left-[38px] flex items-center justify-center min-w-[26px] h-[26px]">
+                           <svg class="w-[18px] h-[18px] fill-[#fff]">
+                              <use xlink:href="#time"></use>
+                           </svg>
+                        </button>
+                        
+                        <div class="touch-label md:hidden absolute bg-[rgba(0,0,0,0.69)] bottom-[8px] left-[8px] rounded-[7px] flex items-center justify-center min-w-[26px] h-[26px]">
+                           <img width="16" height="16" class="" src="./img/touch.svg" alt="Img">
+                        </div>
+
+                        <div class="hd-label absolute font-main font-bold text-[12px] text-white top-[8px] right-[8px] rounded-[7px] bg-[rgba(0,0,0,0.69)] flex items-center justify-center min-w-[26px] h-[26px]">
+                           HD
+                        </div>
+
+                        <div class="absolute px-[4px] gap-[6px] font-main font-normal text-[12px] text-white bottom-[8px] right-[8px] rounded-[7px] bg-[rgba(0,0,0,0.69)] flex items-center justify-center min-w-[26px] h-[26px]">
+                           <img width="16" height="16" class="" src="./img/clock.svg" alt="Img">
+                           <span>28:00</span>
+                        </div>
+                     </div>
+
+                     <a href="index-2.html" class="main-content__item-link font-accent font-medium text-[16px] dark:text-white text-black hover dark:hover:text-accent hover:text-accent">Watch dolor sit amet consectetur adipisicing elit. Expedita suscipit recusandae minima illum dicta odit corrupti pariatur.</a>
+                 
+                     <div class="main-content__bottom-controls mt-[8px] flex items-center gap-[10px]">
+                        <div class="main-content__bottom-item flex items-center gap-[6px] mr-auto">
+                           <img class="w-[16px] h-[16px]" src="./img/calendar.svg" alt="Img">
+                           <span class="font-main font-normal dark:text-white text-[12px] text-black">19 hours ago</span>
+                        </div>
+                        
+                        <div class="main-content__bottom-item flex items-center gap-[6px]">
+                           <img class="w-[16px] h-[16px]" src="./img/eye.svg" alt="Img">
+                           <span class="font-main font-normal dark:text-white text-[12px] text-black">13k</span>
+                        </div>
+                        
+                        <div class="main-content__bottom-item flex items-center gap-[6px]">
+                           <img class="w-[16px] h-[16px]" src="./img/like.svg" alt="Img">
+                           <span class="font-main font-normal dark:text-white text-[12px] text-black">100%</span>
+                        </div>
+                     </div>
+                  </div>
+
+                  <div class="main-content__item">
+                     <div class="main-content__image relative pb-[56%] overflow-hidden rounded-[12px] mb-[8px]">
+                        <img class="absolute top-0 left-0 right-0 bottom-0 w-full h-full object-cover" src="./img/picture-2.jpg" alt="Img">
+
+                        <button class="heart-label hover absolute bg-[rgba(0,0,0,0.69)] top-[8px] left-[8px] rounded-[7px] flex items-center justify-center min-w-[26px] h-[26px]">
+                           <svg class="w-[18px] h-[18px] fill-[#fff]">
+                              <use xlink:href="#heart"></use>
+                           </svg>
+                        </button>
+                        
+                        <button class="time-label hover absolute bg-[rgba(0,0,0,0.69)] rounded-[7px] top-[8px] left-[38px] flex items-center justify-center min-w-[26px] h-[26px]">
+                           <svg class="w-[18px] h-[18px] fill-[#fff]">
+                              <use xlink:href="#time"></use>
+                           </svg>
+                        </button>
+                        
+                        <div class="touch-label md:hidden absolute bg-[rgba(0,0,0,0.69)] bottom-[8px] left-[8px] rounded-[7px] flex items-center justify-center min-w-[26px] h-[26px]">
+                           <img width="16" height="16" class="" src="./img/touch.svg" alt="Img">
+                        </div>
+
+                        <div class="hd-label absolute font-main font-bold text-[12px] text-white top-[8px] right-[8px] rounded-[7px] bg-[rgba(0,0,0,0.69)] flex items-center justify-center min-w-[26px] h-[26px]">
+                           HD
+                        </div>
+
+                        <div class="absolute px-[4px] gap-[6px] font-main font-normal text-[12px] text-white bottom-[8px] right-[8px] rounded-[7px] bg-[rgba(0,0,0,0.69)] flex items-center justify-center min-w-[26px] h-[26px]">
+                           <img width="16" height="16" class="" src="./img/clock.svg" alt="Img">
+                           <span>28:00</span>
+                        </div>
+                     </div>
+
+                     <a href="index-2.html" class="main-content__item-link font-accent font-medium text-[16px] dark:text-white text-black hover dark:hover:text-accent hover:text-accent">Watch dolor sit amet consectetur adipisicing elit. Expedita suscipit recusandae minima illum dicta odit corrupti pariatur.</a>
+                 
+                     <div class="main-content__bottom-controls mt-[8px] flex items-center gap-[10px]">
+                        <div class="main-content__bottom-item flex items-center gap-[6px] mr-auto">
+                           <img class="w-[16px] h-[16px]" src="./img/calendar.svg" alt="Img">
+                           <span class="font-main font-normal dark:text-white text-[12px] text-black">19 hours ago</span>
+                        </div>
+                        
+                        <div class="main-content__bottom-item flex items-center gap-[6px]">
+                           <img class="w-[16px] h-[16px]" src="./img/eye.svg" alt="Img">
+                           <span class="font-main font-normal dark:text-white text-[12px] text-black">13k</span>
+                        </div>
+                        
+                        <div class="main-content__bottom-item flex items-center gap-[6px]">
+                           <img class="w-[16px] h-[16px]" src="./img/like.svg" alt="Img">
+                           <span class="font-main font-normal dark:text-white text-[12px] text-black">100%</span>
+                        </div>
+                     </div>
+                  </div>
+
+                  <div class="main-content__item">
+                     <div class="main-content__image relative pb-[56%] overflow-hidden rounded-[12px] mb-[8px]">
+                        <img class="absolute top-0 left-0 right-0 bottom-0 w-full h-full object-cover" src="./img/picture-4.jpg" alt="Img">
+
+                        <button class="heart-label hover absolute bg-[rgba(0,0,0,0.69)] top-[8px] left-[8px] rounded-[7px] flex items-center justify-center min-w-[26px] h-[26px]">
+                           <svg class="w-[18px] h-[18px] fill-[#fff]">
+                              <use xlink:href="#heart"></use>
+                           </svg>
+                        </button>
+                        
+                        <button class="time-label hover absolute bg-[rgba(0,0,0,0.69)] rounded-[7px] top-[8px] left-[38px] flex items-center justify-center min-w-[26px] h-[26px]">
+                           <svg class="w-[18px] h-[18px] fill-[#fff]">
+                              <use xlink:href="#time"></use>
+                           </svg>
+                        </button>
+                        
+                        <div class="touch-label md:hidden absolute bg-[rgba(0,0,0,0.69)] bottom-[8px] left-[8px] rounded-[7px] flex items-center justify-center min-w-[26px] h-[26px]">
+                           <img width="16" height="16" class="" src="./img/touch.svg" alt="Img">
+                        </div>
+
+                        <div class="hd-label absolute font-main font-bold text-[12px] text-white top-[8px] right-[8px] rounded-[7px] bg-[rgba(0,0,0,0.69)] flex items-center justify-center min-w-[26px] h-[26px]">
+                           HD
+                        </div>
+
+                        <div class="absolute px-[4px] gap-[6px] font-main font-normal text-[12px] text-white bottom-[8px] right-[8px] rounded-[7px] bg-[rgba(0,0,0,0.69)] flex items-center justify-center min-w-[26px] h-[26px]">
+                           <img width="16" height="16" class="" src="./img/clock.svg" alt="Img">
+                           <span>28:00</span>
+                        </div>
+                     </div>
+
+                     <a href="index-2.html" class="main-content__item-link font-accent font-medium text-[16px] dark:text-white text-black hover dark:hover:text-accent hover:text-accent">Watch dolor sit amet consectetur adipisicing elit. Expedita suscipit recusandae minima illum dicta odit corrupti pariatur.</a>
+                 
+                     <div class="main-content__bottom-controls mt-[8px] flex items-center gap-[10px]">
+                        <div class="main-content__bottom-item flex items-center gap-[6px] mr-auto">
+                           <img class="w-[16px] h-[16px]" src="./img/calendar.svg" alt="Img">
+                           <span class="font-main font-normal dark:text-white text-[12px] text-black">19 hours ago</span>
+                        </div>
+                        
+                        <div class="main-content__bottom-item flex items-center gap-[6px]">
+                           <img class="w-[16px] h-[16px]" src="./img/eye.svg" alt="Img">
+                           <span class="font-main font-normal dark:text-white text-[12px] text-black">13k</span>
+                        </div>
+                        
+                        <div class="main-content__bottom-item flex items-center gap-[6px]">
+                           <img class="w-[16px] h-[16px]" src="./img/like.svg" alt="Img">
+                           <span class="font-main font-normal dark:text-white text-[12px] text-black">100%</span>
+                        </div>
+                     </div>
+                  </div>
+
+                  <div class="main-content__item">
+                     <div class="main-content__image relative pb-[56%] overflow-hidden rounded-[12px] mb-[8px]">
+                        <img class="absolute top-0 left-0 right-0 bottom-0 w-full h-full object-cover" src="./img/picture-3.jpg" alt="Img">
+
+                        <button class="heart-label hover absolute bg-[rgba(0,0,0,0.69)] top-[8px] left-[8px] rounded-[7px] flex items-center justify-center min-w-[26px] h-[26px]">
+                           <svg class="w-[18px] h-[18px] fill-[#fff]">
+                              <use xlink:href="#heart"></use>
+                           </svg>
+                        </button>
+                        
+                        <button class="time-label hover absolute bg-[rgba(0,0,0,0.69)] rounded-[7px] top-[8px] left-[38px] flex items-center justify-center min-w-[26px] h-[26px]">
+                           <svg class="w-[18px] h-[18px] fill-[#fff]">
+                              <use xlink:href="#time"></use>
+                           </svg>
+                        </button>
+                        
+                        <div class="touch-label md:hidden absolute bg-[rgba(0,0,0,0.69)] bottom-[8px] left-[8px] rounded-[7px] flex items-center justify-center min-w-[26px] h-[26px]">
+                           <img width="16" height="16" class="" src="./img/touch.svg" alt="Img">
+                        </div>
+
+                        <div class="hd-label absolute font-main font-bold text-[12px] text-white top-[8px] right-[8px] rounded-[7px] bg-[rgba(0,0,0,0.69)] flex items-center justify-center min-w-[26px] h-[26px]">
+                           HD
+                        </div>
+
+                        <div class="absolute px-[4px] gap-[6px] font-main font-normal text-[12px] text-white bottom-[8px] right-[8px] rounded-[7px] bg-[rgba(0,0,0,0.69)] flex items-center justify-center min-w-[26px] h-[26px]">
+                           <img width="16" height="16" class="" src="./img/clock.svg" alt="Img">
+                           <span>28:00</span>
+                        </div>
+                     </div>
+
+                     <a href="index-2.html" class="main-content__item-link font-accent font-medium text-[16px] dark:text-white text-black hover dark:hover:text-accent hover:text-accent">Watch dolor sit amet consectetur adipisicing elit. Expedita suscipit recusandae minima illum dicta odit corrupti pariatur.</a>
+                 
+                     <div class="main-content__bottom-controls mt-[8px] flex items-center gap-[10px]">
+                        <div class="main-content__bottom-item flex items-center gap-[6px] mr-auto">
+                           <img class="w-[16px] h-[16px]" src="./img/calendar.svg" alt="Img">
+                           <span class="font-main font-normal dark:text-white text-[12px] text-black">19 hours ago</span>
+                        </div>
+                        
+                        <div class="main-content__bottom-item flex items-center gap-[6px]">
+                           <img class="w-[16px] h-[16px]" src="./img/eye.svg" alt="Img">
+                           <span class="font-main font-normal dark:text-white text-[12px] text-black">13k</span>
+                        </div>
+                        
+                        <div class="main-content__bottom-item flex items-center gap-[6px]">
+                           <img class="w-[16px] h-[16px]" src="./img/like.svg" alt="Img">
+                           <span class="font-main font-normal dark:text-white text-[12px] text-black">100%</span>
+                        </div>
+                     </div>
+                  </div>
+
+                  <div class="main-content__item">
+                     <div class="main-content__image relative pb-[56%] overflow-hidden rounded-[12px] mb-[8px]">
+                        <img class="absolute top-0 left-0 right-0 bottom-0 w-full h-full object-cover" src="./img/picture-2.jpg" alt="Img">
+
+                        <button class="heart-label hover absolute bg-[rgba(0,0,0,0.69)] top-[8px] left-[8px] rounded-[7px] flex items-center justify-center min-w-[26px] h-[26px]">
+                           <svg class="w-[18px] h-[18px] fill-[#fff]">
+                              <use xlink:href="#heart"></use>
+                           </svg>
+                        </button>
+                        
+                        <button class="time-label hover absolute bg-[rgba(0,0,0,0.69)] rounded-[7px] top-[8px] left-[38px] flex items-center justify-center min-w-[26px] h-[26px]">
+                           <svg class="w-[18px] h-[18px] fill-[#fff]">
+                              <use xlink:href="#time"></use>
+                           </svg>
+                        </button>
+                        
+                        <div class="touch-label md:hidden absolute bg-[rgba(0,0,0,0.69)] bottom-[8px] left-[8px] rounded-[7px] flex items-center justify-center min-w-[26px] h-[26px]">
+                           <img width="16" height="16" class="" src="./img/touch.svg" alt="Img">
+                        </div>
+
+                        <div class="hd-label absolute font-main font-bold text-[12px] text-white top-[8px] right-[8px] rounded-[7px] bg-[rgba(0,0,0,0.69)] flex items-center justify-center min-w-[26px] h-[26px]">
+                           HD
+                        </div>
+
+                        <div class="absolute px-[4px] gap-[6px] font-main font-normal text-[12px] text-white bottom-[8px] right-[8px] rounded-[7px] bg-[rgba(0,0,0,0.69)] flex items-center justify-center min-w-[26px] h-[26px]">
+                           <img width="16" height="16" class="" src="./img/clock.svg" alt="Img">
+                           <span>28:00</span>
+                        </div>
+                     </div>
+
+                     <a href="index-2.html" class="main-content__item-link font-accent font-medium text-[16px] dark:text-white text-black hover dark:hover:text-accent hover:text-accent">Watch dolor sit amet consectetur adipisicing elit. Expedita suscipit recusandae minima illum dicta odit corrupti pariatur.</a>
+                 
+                     <div class="main-content__bottom-controls mt-[8px] flex items-center gap-[10px]">
+                        <div class="main-content__bottom-item flex items-center gap-[6px] mr-auto">
+                           <img class="w-[16px] h-[16px]" src="./img/calendar.svg" alt="Img">
+                           <span class="font-main font-normal dark:text-white text-[12px] text-black">19 hours ago</span>
+                        </div>
+                        
+                        <div class="main-content__bottom-item flex items-center gap-[6px]">
+                           <img class="w-[16px] h-[16px]" src="./img/eye.svg" alt="Img">
+                           <span class="font-main font-normal dark:text-white text-[12px] text-black">13k</span>
+                        </div>
+                        
+                        <div class="main-content__bottom-item flex items-center gap-[6px]">
+                           <img class="w-[16px] h-[16px]" src="./img/like.svg" alt="Img">
+                           <span class="font-main font-normal dark:text-white text-[12px] text-black">100%</span>
+                        </div>
+                     </div>
+                  </div>
+
+                  <div class="main-content__item">
+                     <div class="main-content__image relative pb-[56%] overflow-hidden rounded-[12px] mb-[8px]">
+                        <img class="absolute top-0 left-0 right-0 bottom-0 w-full h-full object-cover" src="./img/picture.jpg" alt="Img">
+
+                        <button class="heart-label hover absolute bg-[rgba(0,0,0,0.69)] top-[8px] left-[8px] rounded-[7px] flex items-center justify-center min-w-[26px] h-[26px]">
+                           <svg class="w-[18px] h-[18px] fill-[#fff]">
+                              <use xlink:href="#heart"></use>
+                           </svg>
+                        </button>
+                        
+                        <button class="time-label hover absolute bg-[rgba(0,0,0,0.69)] rounded-[7px] top-[8px] left-[38px] flex items-center justify-center min-w-[26px] h-[26px]">
+                           <svg class="w-[18px] h-[18px] fill-[#fff]">
+                              <use xlink:href="#time"></use>
+                           </svg>
+                        </button>
+                        
+                        <div class="touch-label md:hidden absolute bg-[rgba(0,0,0,0.69)] bottom-[8px] left-[8px] rounded-[7px] flex items-center justify-center min-w-[26px] h-[26px]">
+                           <img width="16" height="16" class="" src="./img/touch.svg" alt="Img">
+                        </div>
+
+                        <div class="hd-label absolute font-main font-bold text-[12px] text-white top-[8px] right-[8px] rounded-[7px] bg-[rgba(0,0,0,0.69)] flex items-center justify-center min-w-[26px] h-[26px]">
+                           HD
+                        </div>
+
+                        <div class="absolute px-[4px] gap-[6px] font-main font-normal text-[12px] text-white bottom-[8px] right-[8px] rounded-[7px] bg-[rgba(0,0,0,0.69)] flex items-center justify-center min-w-[26px] h-[26px]">
+                           <img width="16" height="16" class="" src="./img/clock.svg" alt="Img">
+                           <span>28:00</span>
+                        </div>
+                     </div>
+
+                     <a href="index-2.html" class="main-content__item-link font-accent font-medium text-[16px] dark:text-white text-black hover dark:hover:text-accent hover:text-accent">Watch dolor sit amet consectetur adipisicing elit. Expedita suscipit recusandae minima illum dicta odit corrupti pariatur.</a>
+                 
+                     <div class="main-content__bottom-controls mt-[8px] flex items-center gap-[10px]">
+                        <div class="main-content__bottom-item flex items-center gap-[6px] mr-auto">
+                           <img class="w-[16px] h-[16px]" src="./img/calendar.svg" alt="Img">
+                           <span class="font-main font-normal dark:text-white text-[12px] text-black">19 hours ago</span>
+                        </div>
+                        
+                        <div class="main-content__bottom-item flex items-center gap-[6px]">
+                           <img class="w-[16px] h-[16px]" src="./img/eye.svg" alt="Img">
+                           <span class="font-main font-normal dark:text-white text-[12px] text-black">13k</span>
+                        </div>
+                        
+                        <div class="main-content__bottom-item flex items-center gap-[6px]">
+                           <img class="w-[16px] h-[16px]" src="./img/like.svg" alt="Img">
+                           <span class="font-main font-normal dark:text-white text-[12px] text-black">100%</span>
+                        </div>
+                     </div>
+                  </div>
+
+                  <div class="main-content__item">
+                     <div class="main-content__image relative pb-[56%] overflow-hidden rounded-[12px] mb-[8px]">
+                        <img class="absolute top-0 left-0 right-0 bottom-0 w-full h-full object-cover" src="./img/picture-4.jpg" alt="Img">
+
+                        <button class="heart-label hover absolute bg-[rgba(0,0,0,0.69)] top-[8px] left-[8px] rounded-[7px] flex items-center justify-center min-w-[26px] h-[26px]">
+                           <svg class="w-[18px] h-[18px] fill-[#fff]">
+                              <use xlink:href="#heart"></use>
+                           </svg>
+                        </button>
+                        
+                        <button class="time-label hover absolute bg-[rgba(0,0,0,0.69)] rounded-[7px] top-[8px] left-[38px] flex items-center justify-center min-w-[26px] h-[26px]">
+                           <svg class="w-[18px] h-[18px] fill-[#fff]">
+                              <use xlink:href="#time"></use>
+                           </svg>
+                        </button>
+                        
+                        <div class="touch-label md:hidden absolute bg-[rgba(0,0,0,0.69)] bottom-[8px] left-[8px] rounded-[7px] flex items-center justify-center min-w-[26px] h-[26px]">
+                           <img width="16" height="16" class="" src="./img/touch.svg" alt="Img">
+                        </div>
+
+                        <div class="hd-label absolute font-main font-bold text-[12px] text-white top-[8px] right-[8px] rounded-[7px] bg-[rgba(0,0,0,0.69)] flex items-center justify-center min-w-[26px] h-[26px]">
+                           HD
+                        </div>
+
+                        <div class="absolute px-[4px] gap-[6px] font-main font-normal text-[12px] text-white bottom-[8px] right-[8px] rounded-[7px] bg-[rgba(0,0,0,0.69)] flex items-center justify-center min-w-[26px] h-[26px]">
+                           <img width="16" height="16" class="" src="./img/clock.svg" alt="Img">
+                           <span>28:00</span>
+                        </div>
+                     </div>
+
+                     <a href="index-2.html" class="main-content__item-link font-accent font-medium text-[16px] dark:text-white text-black hover dark:hover:text-accent hover:text-accent">Watch dolor sit amet consectetur adipisicing elit. Expedita suscipit recusandae minima illum dicta odit corrupti pariatur.</a>
+                 
+                     <div class="main-content__bottom-controls mt-[8px] flex items-center gap-[10px]">
+                        <div class="main-content__bottom-item flex items-center gap-[6px] mr-auto">
+                           <img class="w-[16px] h-[16px]" src="./img/calendar.svg" alt="Img">
+                           <span class="font-main font-normal dark:text-white text-[12px] text-black">19 hours ago</span>
+                        </div>
+                        
+                        <div class="main-content__bottom-item flex items-center gap-[6px]">
+                           <img class="w-[16px] h-[16px]" src="./img/eye.svg" alt="Img">
+                           <span class="font-main font-normal dark:text-white text-[12px] text-black">13k</span>
+                        </div>
+                        
+                        <div class="main-content__bottom-item flex items-center gap-[6px]">
+                           <img class="w-[16px] h-[16px]" src="./img/like.svg" alt="Img">
+                           <span class="font-main font-normal dark:text-white text-[12px] text-black">100%</span>
+                        </div>
+                     </div>
+                  </div>
+
+                  <div class="main-content__item">
+                     <div class="main-content__image relative pb-[56%] overflow-hidden rounded-[12px] mb-[8px]">
+                        <img class="absolute top-0 left-0 right-0 bottom-0 w-full h-full object-cover" src="./img/picture.jpg" alt="Img">
+
+                        <button class="heart-label hover absolute bg-[rgba(0,0,0,0.69)] top-[8px] left-[8px] rounded-[7px] flex items-center justify-center min-w-[26px] h-[26px]">
+                           <svg class="w-[18px] h-[18px] fill-[#fff]">
+                              <use xlink:href="#heart"></use>
+                           </svg>
+                        </button>
+                        
+                        <button class="time-label hover absolute bg-[rgba(0,0,0,0.69)] rounded-[7px] top-[8px] left-[38px] flex items-center justify-center min-w-[26px] h-[26px]">
+                           <svg class="w-[18px] h-[18px] fill-[#fff]">
+                              <use xlink:href="#time"></use>
+                           </svg>
+                        </button>
+                        
+                        <div class="touch-label md:hidden absolute bg-[rgba(0,0,0,0.69)] bottom-[8px] left-[8px] rounded-[7px] flex items-center justify-center min-w-[26px] h-[26px]">
+                           <img width="16" height="16" class="" src="./img/touch.svg" alt="Img">
+                        </div>
+
+                        <div class="hd-label absolute font-main font-bold text-[12px] text-white top-[8px] right-[8px] rounded-[7px] bg-[rgba(0,0,0,0.69)] flex items-center justify-center min-w-[26px] h-[26px]">
+                           HD
+                        </div>
+
+                        <div class="absolute px-[4px] gap-[6px] font-main font-normal text-[12px] text-white bottom-[8px] right-[8px] rounded-[7px] bg-[rgba(0,0,0,0.69)] flex items-center justify-center min-w-[26px] h-[26px]">
+                           <img width="16" height="16" class="" src="./img/clock.svg" alt="Img">
+                           <span>28:00</span>
+                        </div>
+                     </div>
+
+                     <a href="index-2.html" class="main-content__item-link font-accent font-medium text-[16px] dark:text-white text-black hover dark:hover:text-accent hover:text-accent">Watch dolor sit amet consectetur adipisicing elit. Expedita suscipit recusandae minima illum dicta odit corrupti pariatur.</a>
+                 
+                     <div class="main-content__bottom-controls mt-[8px] flex items-center gap-[10px]">
+                        <div class="main-content__bottom-item flex items-center gap-[6px] mr-auto">
+                           <img class="w-[16px] h-[16px]" src="./img/calendar.svg" alt="Img">
+                           <span class="font-main font-normal dark:text-white text-[12px] text-black">19 hours ago</span>
+                        </div>
+                        
+                        <div class="main-content__bottom-item flex items-center gap-[6px]">
+                           <img class="w-[16px] h-[16px]" src="./img/eye.svg" alt="Img">
+                           <span class="font-main font-normal dark:text-white text-[12px] text-black">13k</span>
+                        </div>
+                        
+                        <div class="main-content__bottom-item flex items-center gap-[6px]">
+                           <img class="w-[16px] h-[16px]" src="./img/like.svg" alt="Img">
+                           <span class="font-main font-normal dark:text-white text-[12px] text-black">100%</span>
+                        </div>
+                     </div>
+                  </div>
+
+                  <div class="main-content__item">
+                     <div class="main-content__image relative pb-[56%] overflow-hidden rounded-[12px] mb-[8px]">
+                        <img class="absolute top-0 left-0 right-0 bottom-0 w-full h-full object-cover" src="./img/picture-3.jpg" alt="Img">
+
+                        <button class="heart-label hover absolute bg-[rgba(0,0,0,0.69)] top-[8px] left-[8px] rounded-[7px] flex items-center justify-center min-w-[26px] h-[26px]">
+                           <svg class="w-[18px] h-[18px] fill-[#fff]">
+                              <use xlink:href="#heart"></use>
+                           </svg>
+                        </button>
+                        
+                        <button class="time-label hover absolute bg-[rgba(0,0,0,0.69)] rounded-[7px] top-[8px] left-[38px] flex items-center justify-center min-w-[26px] h-[26px]">
+                           <svg class="w-[18px] h-[18px] fill-[#fff]">
+                              <use xlink:href="#time"></use>
+                           </svg>
+                        </button>
+                        
+                        <div class="touch-label md:hidden absolute bg-[rgba(0,0,0,0.69)] bottom-[8px] left-[8px] rounded-[7px] flex items-center justify-center min-w-[26px] h-[26px]">
+                           <img width="16" height="16" class="" src="./img/touch.svg" alt="Img">
+                        </div>
+
+                        <div class="hd-label absolute font-main font-bold text-[12px] text-white top-[8px] right-[8px] rounded-[7px] bg-[rgba(0,0,0,0.69)] flex items-center justify-center min-w-[26px] h-[26px]">
+                           HD
+                        </div>
+
+                        <div class="absolute px-[4px] gap-[6px] font-main font-normal text-[12px] text-white bottom-[8px] right-[8px] rounded-[7px] bg-[rgba(0,0,0,0.69)] flex items-center justify-center min-w-[26px] h-[26px]">
+                           <img width="16" height="16" class="" src="./img/clock.svg" alt="Img">
+                           <span>28:00</span>
+                        </div>
+                     </div>
+
+                     <a href="index-2.html" class="main-content__item-link font-accent font-medium text-[16px] dark:text-white text-black hover dark:hover:text-accent hover:text-accent">Watch dolor sit amet consectetur adipisicing elit. Expedita suscipit recusandae minima illum dicta odit corrupti pariatur.</a>
+                 
+                     <div class="main-content__bottom-controls mt-[8px] flex items-center gap-[10px]">
+                        <div class="main-content__bottom-item flex items-center gap-[6px] mr-auto">
+                           <img class="w-[16px] h-[16px]" src="./img/calendar.svg" alt="Img">
+                           <span class="font-main font-normal dark:text-white text-[12px] text-black">19 hours ago</span>
+                        </div>
+                        
+                        <div class="main-content__bottom-item flex items-center gap-[6px]">
+                           <img class="w-[16px] h-[16px]" src="./img/eye.svg" alt="Img">
+                           <span class="font-main font-normal dark:text-white text-[12px] text-black">13k</span>
+                        </div>
+                        
+                        <div class="main-content__bottom-item flex items-center gap-[6px]">
+                           <img class="w-[16px] h-[16px]" src="./img/like.svg" alt="Img">
+                           <span class="font-main font-normal dark:text-white text-[12px] text-black">100%</span>
+                        </div>
+                     </div>
+                  </div>
+
+                  <div class="main-content__item">
+                     <div class="main-content__image relative pb-[56%] overflow-hidden rounded-[12px] mb-[8px]">
+                        <img class="absolute top-0 left-0 right-0 bottom-0 w-full h-full object-cover" src="./img/picture-2.jpg" alt="Img">
+
+                        <button class="heart-label hover absolute bg-[rgba(0,0,0,0.69)] top-[8px] left-[8px] rounded-[7px] flex items-center justify-center min-w-[26px] h-[26px]">
+                           <svg class="w-[18px] h-[18px] fill-[#fff]">
+                              <use xlink:href="#heart"></use>
+                           </svg>
+                        </button>
+                        
+                        <button class="time-label hover absolute bg-[rgba(0,0,0,0.69)] rounded-[7px] top-[8px] left-[38px] flex items-center justify-center min-w-[26px] h-[26px]">
+                           <svg class="w-[18px] h-[18px] fill-[#fff]">
+                              <use xlink:href="#time"></use>
+                           </svg>
+                        </button>
+                        
+                        <div class="touch-label md:hidden absolute bg-[rgba(0,0,0,0.69)] bottom-[8px] left-[8px] rounded-[7px] flex items-center justify-center min-w-[26px] h-[26px]">
+                           <img width="16" height="16" class="" src="./img/touch.svg" alt="Img">
+                        </div>
+
+                        <div class="hd-label absolute font-main font-bold text-[12px] text-white top-[8px] right-[8px] rounded-[7px] bg-[rgba(0,0,0,0.69)] flex items-center justify-center min-w-[26px] h-[26px]">
+                           HD
+                        </div>
+
+                        <div class="absolute px-[4px] gap-[6px] font-main font-normal text-[12px] text-white bottom-[8px] right-[8px] rounded-[7px] bg-[rgba(0,0,0,0.69)] flex items-center justify-center min-w-[26px] h-[26px]">
+                           <img width="16" height="16" class="" src="./img/clock.svg" alt="Img">
+                           <span>28:00</span>
+                        </div>
+                     </div>
+
+                     <a href="index-2.html" class="main-content__item-link font-accent font-medium text-[16px] dark:text-white text-black hover dark:hover:text-accent hover:text-accent">Watch dolor sit amet consectetur adipisicing elit. Expedita suscipit recusandae minima illum dicta odit corrupti pariatur.</a>
+                 
+                     <div class="main-content__bottom-controls mt-[8px] flex items-center gap-[10px]">
+                        <div class="main-content__bottom-item flex items-center gap-[6px] mr-auto">
+                           <img class="w-[16px] h-[16px]" src="./img/calendar.svg" alt="Img">
+                           <span class="font-main font-normal dark:text-white text-[12px] text-black">19 hours ago</span>
+                        </div>
+                        
+                        <div class="main-content__bottom-item flex items-center gap-[6px]">
+                           <img class="w-[16px] h-[16px]" src="./img/eye.svg" alt="Img">
+                           <span class="font-main font-normal dark:text-white text-[12px] text-black">13k</span>
+                        </div>
+                        
+                        <div class="main-content__bottom-item flex items-center gap-[6px]">
+                           <img class="w-[16px] h-[16px]" src="./img/like.svg" alt="Img">
+                           <span class="font-main font-normal dark:text-white text-[12px] text-black">100%</span>
+                        </div>
+                     </div>
+                  </div>
+
+                  <div class="main-content__item">
+                     <div class="main-content__image relative pb-[56%] overflow-hidden rounded-[12px] mb-[8px]">
+                        <img class="absolute top-0 left-0 right-0 bottom-0 w-full h-full object-cover" src="./img/picture-4.jpg" alt="Img">
+
+                        <button class="heart-label hover absolute bg-[rgba(0,0,0,0.69)] top-[8px] left-[8px] rounded-[7px] flex items-center justify-center min-w-[26px] h-[26px]">
+                           <svg class="w-[18px] h-[18px] fill-[#fff]">
+                              <use xlink:href="#heart"></use>
+                           </svg>
+                        </button>
+                        
+                        <button class="time-label hover absolute bg-[rgba(0,0,0,0.69)] rounded-[7px] top-[8px] left-[38px] flex items-center justify-center min-w-[26px] h-[26px]">
+                           <svg class="w-[18px] h-[18px] fill-[#fff]">
+                              <use xlink:href="#time"></use>
+                           </svg>
+                        </button>
+                        
+                        <div class="touch-label md:hidden absolute bg-[rgba(0,0,0,0.69)] bottom-[8px] left-[8px] rounded-[7px] flex items-center justify-center min-w-[26px] h-[26px]">
+                           <img width="16" height="16" class="" src="./img/touch.svg" alt="Img">
+                        </div>
+
+                        <div class="hd-label absolute font-main font-bold text-[12px] text-white top-[8px] right-[8px] rounded-[7px] bg-[rgba(0,0,0,0.69)] flex items-center justify-center min-w-[26px] h-[26px]">
+                           HD
+                        </div>
+
+                        <div class="absolute px-[4px] gap-[6px] font-main font-normal text-[12px] text-white bottom-[8px] right-[8px] rounded-[7px] bg-[rgba(0,0,0,0.69)] flex items-center justify-center min-w-[26px] h-[26px]">
+                           <img width="16" height="16" class="" src="./img/clock.svg" alt="Img">
+                           <span>28:00</span>
+                        </div>
+                     </div>
+
+                     <a href="index-2.html" class="main-content__item-link font-accent font-medium text-[16px] dark:text-white text-black hover dark:hover:text-accent hover:text-accent">Watch dolor sit amet consectetur adipisicing elit. Expedita suscipit recusandae minima illum dicta odit corrupti pariatur.</a>
+                 
+                     <div class="main-content__bottom-controls mt-[8px] flex items-center gap-[10px]">
+                        <div class="main-content__bottom-item flex items-center gap-[6px] mr-auto">
+                           <img class="w-[16px] h-[16px]" src="./img/calendar.svg" alt="Img">
+                           <span class="font-main font-normal dark:text-white text-[12px] text-black">19 hours ago</span>
+                        </div>
+                        
+                        <div class="main-content__bottom-item flex items-center gap-[6px]">
+                           <img class="w-[16px] h-[16px]" src="./img/eye.svg" alt="Img">
+                           <span class="font-main font-normal dark:text-white text-[12px] text-black">13k</span>
+                        </div>
+                        
+                        <div class="main-content__bottom-item flex items-center gap-[6px]">
+                           <img class="w-[16px] h-[16px]" src="./img/like.svg" alt="Img">
+                           <span class="font-main font-normal dark:text-white text-[12px] text-black">100%</span>
+                        </div>
+                     </div>
+                  </div>
+
+                  <div class="main-content__item">
+                     <div class="main-content__image relative pb-[56%] overflow-hidden rounded-[12px] mb-[8px]">
+                        <img class="absolute top-0 left-0 right-0 bottom-0 w-full h-full object-cover" src="./img/picture-3.jpg" alt="Img">
+
+                        <button class="heart-label hover absolute bg-[rgba(0,0,0,0.69)] top-[8px] left-[8px] rounded-[7px] flex items-center justify-center min-w-[26px] h-[26px]">
+                           <svg class="w-[18px] h-[18px] fill-[#fff]">
+                              <use xlink:href="#heart"></use>
+                           </svg>
+                        </button>
+                        
+                        <button class="time-label hover absolute bg-[rgba(0,0,0,0.69)] rounded-[7px] top-[8px] left-[38px] flex items-center justify-center min-w-[26px] h-[26px]">
+                           <svg class="w-[18px] h-[18px] fill-[#fff]">
+                              <use xlink:href="#time"></use>
+                           </svg>
+                        </button>
+                        
+                        <div class="touch-label md:hidden absolute bg-[rgba(0,0,0,0.69)] bottom-[8px] left-[8px] rounded-[7px] flex items-center justify-center min-w-[26px] h-[26px]">
+                           <img width="16" height="16" class="" src="./img/touch.svg" alt="Img">
+                        </div>
+
+                        <div class="hd-label absolute font-main font-bold text-[12px] text-white top-[8px] right-[8px] rounded-[7px] bg-[rgba(0,0,0,0.69)] flex items-center justify-center min-w-[26px] h-[26px]">
+                           HD
+                        </div>
+
+                        <div class="absolute px-[4px] gap-[6px] font-main font-normal text-[12px] text-white bottom-[8px] right-[8px] rounded-[7px] bg-[rgba(0,0,0,0.69)] flex items-center justify-center min-w-[26px] h-[26px]">
+                           <img width="16" height="16" class="" src="./img/clock.svg" alt="Img">
+                           <span>28:00</span>
+                        </div>
+                     </div>
+
+                     <a href="index-2.html" class="main-content__item-link font-accent font-medium text-[16px] dark:text-white text-black hover dark:hover:text-accent hover:text-accent">Watch dolor sit amet consectetur adipisicing elit. Expedita suscipit recusandae minima illum dicta odit corrupti pariatur.</a>
+                 
+                     <div class="main-content__bottom-controls mt-[8px] flex items-center gap-[10px]">
+                        <div class="main-content__bottom-item flex items-center gap-[6px] mr-auto">
+                           <img class="w-[16px] h-[16px]" src="./img/calendar.svg" alt="Img">
+                           <span class="font-main font-normal dark:text-white text-[12px] text-black">19 hours ago</span>
+                        </div>
+                        
+                        <div class="main-content__bottom-item flex items-center gap-[6px]">
+                           <img class="w-[16px] h-[16px]" src="./img/eye.svg" alt="Img">
+                           <span class="font-main font-normal dark:text-white text-[12px] text-black">13k</span>
+                        </div>
+                        
+                        <div class="main-content__bottom-item flex items-center gap-[6px]">
+                           <img class="w-[16px] h-[16px]" src="./img/like.svg" alt="Img">
+                           <span class="font-main font-normal dark:text-white text-[12px] text-black">100%</span>
+                        </div>
+                     </div>
+                  </div>
+
+                  <div class="main-content__item">
+                     <div class="main-content__image relative pb-[56%] overflow-hidden rounded-[12px] mb-[8px]">
+                        <img class="absolute top-0 left-0 right-0 bottom-0 w-full h-full object-cover" src="./img/picture-2.jpg" alt="Img">
+
+                        <button class="heart-label hover absolute bg-[rgba(0,0,0,0.69)] top-[8px] left-[8px] rounded-[7px] flex items-center justify-center min-w-[26px] h-[26px]">
+                           <svg class="w-[18px] h-[18px] fill-[#fff]">
+                              <use xlink:href="#heart"></use>
+                           </svg>
+                        </button>
+                        
+                        <button class="time-label hover absolute bg-[rgba(0,0,0,0.69)] rounded-[7px] top-[8px] left-[38px] flex items-center justify-center min-w-[26px] h-[26px]">
+                           <svg class="w-[18px] h-[18px] fill-[#fff]">
+                              <use xlink:href="#time"></use>
+                           </svg>
+                        </button>
+                        
+                        <div class="touch-label md:hidden absolute bg-[rgba(0,0,0,0.69)] bottom-[8px] left-[8px] rounded-[7px] flex items-center justify-center min-w-[26px] h-[26px]">
+                           <img width="16" height="16" class="" src="./img/touch.svg" alt="Img">
+                        </div>
+
+                        <div class="hd-label absolute font-main font-bold text-[12px] text-white top-[8px] right-[8px] rounded-[7px] bg-[rgba(0,0,0,0.69)] flex items-center justify-center min-w-[26px] h-[26px]">
+                           HD
+                        </div>
+
+                        <div class="absolute px-[4px] gap-[6px] font-main font-normal text-[12px] text-white bottom-[8px] right-[8px] rounded-[7px] bg-[rgba(0,0,0,0.69)] flex items-center justify-center min-w-[26px] h-[26px]">
+                           <img width="16" height="16" class="" src="./img/clock.svg" alt="Img">
+                           <span>28:00</span>
+                        </div>
+                     </div>
+
+                     <a href="index-2.html" class="main-content__item-link font-accent font-medium text-[16px] dark:text-white text-black hover dark:hover:text-accent hover:text-accent">Watch dolor sit amet consectetur adipisicing elit. Expedita suscipit recusandae minima illum dicta odit corrupti pariatur.</a>
+                 
+                     <div class="main-content__bottom-controls mt-[8px] flex items-center gap-[10px]">
+                        <div class="main-content__bottom-item flex items-center gap-[6px] mr-auto">
+                           <img class="w-[16px] h-[16px]" src="./img/calendar.svg" alt="Img">
+                           <span class="font-main font-normal dark:text-white text-[12px] text-black">19 hours ago</span>
+                        </div>
+                        
+                        <div class="main-content__bottom-item flex items-center gap-[6px]">
+                           <img class="w-[16px] h-[16px]" src="./img/eye.svg" alt="Img">
+                           <span class="font-main font-normal dark:text-white text-[12px] text-black">13k</span>
+                        </div>
+                        
+                        <div class="main-content__bottom-item flex items-center gap-[6px]">
+                           <img class="w-[16px] h-[16px]" src="./img/like.svg" alt="Img">
+                           <span class="font-main font-normal dark:text-white text-[12px] text-black">100%</span>
+                        </div>
+                     </div>
+                  </div>
+
+                  <div class="main-content__item">
+                     <div class="main-content__image relative pb-[56%] overflow-hidden rounded-[12px] mb-[8px]">
+                        <img class="absolute top-0 left-0 right-0 bottom-0 w-full h-full object-cover" src="./img/picture.jpg" alt="Img">
+
+                        <button class="heart-label hover absolute bg-[rgba(0,0,0,0.69)] top-[8px] left-[8px] rounded-[7px] flex items-center justify-center min-w-[26px] h-[26px]">
+                           <svg class="w-[18px] h-[18px] fill-[#fff]">
+                              <use xlink:href="#heart"></use>
+                           </svg>
+                        </button>
+                        
+                        <button class="time-label hover absolute bg-[rgba(0,0,0,0.69)] rounded-[7px] top-[8px] left-[38px] flex items-center justify-center min-w-[26px] h-[26px]">
+                           <svg class="w-[18px] h-[18px] fill-[#fff]">
+                              <use xlink:href="#time"></use>
+                           </svg>
+                        </button>
+                        
+                        <div class="touch-label md:hidden absolute bg-[rgba(0,0,0,0.69)] bottom-[8px] left-[8px] rounded-[7px] flex items-center justify-center min-w-[26px] h-[26px]">
+                           <img width="16" height="16" class="" src="./img/touch.svg" alt="Img">
+                        </div>
+
+                        <div class="hd-label absolute font-main font-bold text-[12px] text-white top-[8px] right-[8px] rounded-[7px] bg-[rgba(0,0,0,0.69)] flex items-center justify-center min-w-[26px] h-[26px]">
+                           HD
+                        </div>
+
+                        <div class="absolute px-[4px] gap-[6px] font-main font-normal text-[12px] text-white bottom-[8px] right-[8px] rounded-[7px] bg-[rgba(0,0,0,0.69)] flex items-center justify-center min-w-[26px] h-[26px]">
+                           <img width="16" height="16" class="" src="./img/clock.svg" alt="Img">
+                           <span>28:00</span>
+                        </div>
+                     </div>
+
+                     <a href="index-2.html" class="main-content__item-link font-accent font-medium text-[16px] dark:text-white text-black hover dark:hover:text-accent hover:text-accent">Watch dolor sit amet consectetur adipisicing elit. Expedita suscipit recusandae minima illum dicta odit corrupti pariatur.</a>
+                 
+                     <div class="main-content__bottom-controls mt-[8px] flex items-center gap-[10px]">
+                        <div class="main-content__bottom-item flex items-center gap-[6px] mr-auto">
+                           <img class="w-[16px] h-[16px]" src="./img/calendar.svg" alt="Img">
+                           <span class="font-main font-normal dark:text-white text-[12px] text-black">19 hours ago</span>
+                        </div>
+                        
+                        <div class="main-content__bottom-item flex items-center gap-[6px]">
+                           <img class="w-[16px] h-[16px]" src="./img/eye.svg" alt="Img">
+                           <span class="font-main font-normal dark:text-white text-[12px] text-black">13k</span>
+                        </div>
+                        
+                        <div class="main-content__bottom-item flex items-center gap-[6px]">
+                           <img class="w-[16px] h-[16px]" src="./img/like.svg" alt="Img">
+                           <span class="font-main font-normal dark:text-white text-[12px] text-black">100%</span>
+                        </div>
+                     </div>
+                  </div>
+
+                  <div class="main-content__item">
+                     <div class="main-content__image relative pb-[56%] overflow-hidden rounded-[12px] mb-[8px]">
+                        <img class="absolute top-0 left-0 right-0 bottom-0 w-full h-full object-cover" src="./img/picture-4.jpg" alt="Img">
+
+                        <button class="heart-label hover absolute bg-[rgba(0,0,0,0.69)] top-[8px] left-[8px] rounded-[7px] flex items-center justify-center min-w-[26px] h-[26px]">
+                           <svg class="w-[18px] h-[18px] fill-[#fff]">
+                              <use xlink:href="#heart"></use>
+                           </svg>
+                        </button>
+                        
+                        <button class="time-label hover absolute bg-[rgba(0,0,0,0.69)] rounded-[7px] top-[8px] left-[38px] flex items-center justify-center min-w-[26px] h-[26px]">
+                           <svg class="w-[18px] h-[18px] fill-[#fff]">
+                              <use xlink:href="#time"></use>
+                           </svg>
+                        </button>
+                        
+                        <div class="touch-label md:hidden absolute bg-[rgba(0,0,0,0.69)] bottom-[8px] left-[8px] rounded-[7px] flex items-center justify-center min-w-[26px] h-[26px]">
+                           <img width="16" height="16" class="" src="./img/touch.svg" alt="Img">
+                        </div>
+
+                        <div class="hd-label absolute font-main font-bold text-[12px] text-white top-[8px] right-[8px] rounded-[7px] bg-[rgba(0,0,0,0.69)] flex items-center justify-center min-w-[26px] h-[26px]">
+                           HD
+                        </div>
+
+                        <div class="absolute px-[4px] gap-[6px] font-main font-normal text-[12px] text-white bottom-[8px] right-[8px] rounded-[7px] bg-[rgba(0,0,0,0.69)] flex items-center justify-center min-w-[26px] h-[26px]">
+                           <img width="16" height="16" class="" src="./img/clock.svg" alt="Img">
+                           <span>28:00</span>
+                        </div>
+                     </div>
+
+                     <a href="index-2.html" class="main-content__item-link font-accent font-medium text-[16px] dark:text-white text-black hover dark:hover:text-accent hover:text-accent">Watch dolor sit amet consectetur adipisicing elit. Expedita suscipit recusandae minima illum dicta odit corrupti pariatur.</a>
+                 
+                     <div class="main-content__bottom-controls mt-[8px] flex items-center gap-[10px]">
+                        <div class="main-content__bottom-item flex items-center gap-[6px] mr-auto">
+                           <img class="w-[16px] h-[16px]" src="./img/calendar.svg" alt="Img">
+                           <span class="font-main font-normal dark:text-white text-[12px] text-black">19 hours ago</span>
+                        </div>
+                        
+                        <div class="main-content__bottom-item flex items-center gap-[6px]">
+                           <img class="w-[16px] h-[16px]" src="./img/eye.svg" alt="Img">
+                           <span class="font-main font-normal dark:text-white text-[12px] text-black">13k</span>
+                        </div>
+                        
+                        <div class="main-content__bottom-item flex items-center gap-[6px]">
+                           <img class="w-[16px] h-[16px]" src="./img/like.svg" alt="Img">
+                           <span class="font-main font-normal dark:text-white text-[12px] text-black">100%</span>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+
+               <div class="breadcrumbs flex items-center gap-[16px] justify-center mb-[32px] md:mb-[40px]">
+                  <a class="" href="#">
+                     <svg class="lang__arrow w-[14px] h-[7px] fill-accent ml-auto flex flex-shrink-0 -rotate-90">
+                        <use xlink:href="#arrow-up"></use>
+                     </svg>
+                  </a>
+
+                  <a class="w-[32px] h-[32px] flex items-center justify-center text-white text-[16px] font-main font-bold rounded-[8px] bg-accent pointer-events-none" href="#">1</a>
+
+                  <div class="flex items-center gap-[16px]">
+                     <a class="flex items-center justify-center dark:text-accent text-black text-[16px] font-main font-normal" href="#">2</a>
+                     <a class="flex items-center justify-center dark:text-accent text-black text-[16px] font-main font-normal" href="#">3</a>
+                     <a class="flex items-center justify-center dark:text-accent text-black text-[16px] font-main font-normal" href="#">4</a>
+                     <a class="flex items-center justify-center dark:text-accent text-black text-[16px] font-main font-normal" href="#">5</a>
+                     <a class="flex items-center justify-center dark:text-accent text-black text-[16px] font-main font-normal" href="#">...</a>
+                     <a class="flex items-center justify-center dark:text-accent text-black text-[16px] font-main font-normal" href="#">23</a>
+                  </div>
+
+                  <a class="" href="#">
+                     <svg class="lang__arrow w-[14px] h-[7px] fill-accent ml-auto flex flex-shrink-0 rotate-90">
+                        <use xlink:href="#arrow-up"></use>
+                     </svg>
+                  </a>
+               </div>
+            </div>
+         </main>    
+
+         <footer class="dark:bg-[#0A0A0A] bg-white dark:border-[#1A1A1A] border-[#E7E7E7] pt-[24px] md:pt-[32px]">
+            <div class="page-container">
+               <div class="footer__top flex gap-x-[4px] gap-y-[8px] flex-wrap mb-[24px]">
+                  <a href="#" class="search__mobile-link font-normal font-main uppercase dark:text-white text-black text-[14px] px-2 py-[2px] dark:border-[#1A1A1A] border-[2px] border-[#E7E7E7] rounded-[6px] hover dark:hover:bg-accent hover:bg-[#E7E7E7]">TABOO</a>
+                  <a href="#" class="search__mobile-link font-normal font-main uppercase dark:text-white text-black text-[14px] px-2 py-[2px] dark:border-[#1A1A1A] border-[2px] border-[#E7E7E7] rounded-[6px] hover dark:hover:bg-accent hover:bg-[#E7E7E7]">LOREM</a>
+                  <a href="#" class="search__mobile-link font-normal font-main uppercase dark:text-white text-black text-[14px] px-2 py-[2px] dark:border-[#1A1A1A] border-[2px] border-[#E7E7E7] rounded-[6px] hover dark:hover:bg-accent hover:bg-[#E7E7E7]">DOLIRAT</a>
+                  <a href="#" class="search__mobile-link font-normal font-main uppercase dark:text-white text-black text-[14px] px-2 py-[2px] dark:border-[#1A1A1A] border-[2px] border-[#E7E7E7] rounded-[6px] hover dark:hover:bg-accent hover:bg-[#E7E7E7]">INTRO</a>
+                  <a href="#" class="search__mobile-link font-normal font-main uppercase dark:text-white text-black text-[14px] px-2 py-[2px] dark:border-[#1A1A1A] border-[2px] border-[#E7E7E7] rounded-[6px] hover dark:hover:bg-accent hover:bg-[#E7E7E7]">KARTON</a>
+                  <a href="#" class="search__mobile-link font-normal font-main uppercase dark:text-white text-black text-[14px] px-2 py-[2px] dark:border-[#1A1A1A] border-[2px] border-[#E7E7E7] rounded-[6px] hover dark:hover:bg-accent hover:bg-[#E7E7E7]">FACILYTI</a>
+                  <a href="#" class="search__mobile-link font-normal font-main uppercase dark:text-white text-black text-[14px] px-2 py-[2px] dark:border-[#1A1A1A] border-[2px] border-[#E7E7E7] rounded-[6px] hover dark:hover:bg-accent hover:bg-[#E7E7E7]">MEKOA</a>
+                  <a href="#" class="search__mobile-link font-normal font-main uppercase dark:text-white text-black text-[14px] px-2 py-[2px] dark:border-[#1A1A1A] border-[2px] border-[#E7E7E7] rounded-[6px] hover dark:hover:bg-accent hover:bg-[#E7E7E7]">TABOO</a>
+                  <a href="#" class="search__mobile-link font-normal font-main uppercase dark:text-white text-black text-[14px] px-2 py-[2px] dark:border-[#1A1A1A] border-[2px] border-[#E7E7E7] rounded-[6px] hover dark:hover:bg-accent hover:bg-[#E7E7E7]">LOREM</a>
+                  <a href="#" class="search__mobile-link font-normal font-main uppercase dark:text-white text-black text-[14px] px-2 py-[2px] dark:border-[#1A1A1A] border-[2px] border-[#E7E7E7] rounded-[6px] hover dark:hover:bg-accent hover:bg-[#E7E7E7]">DOLIRAT</a>
+                  <a href="#" class="search__mobile-link font-normal font-main uppercase dark:text-white text-black text-[14px] px-2 py-[2px] dark:border-[#1A1A1A] border-[2px] border-[#E7E7E7] rounded-[6px] hover dark:hover:bg-accent hover:bg-[#E7E7E7]">INTRO</a>
+                  <a href="#" class="search__mobile-link font-normal font-main uppercase dark:text-white text-black text-[14px] px-2 py-[2px] dark:border-[#1A1A1A] border-[2px] border-[#E7E7E7] rounded-[6px] hover dark:hover:bg-accent hover:bg-[#E7E7E7]">KARTON</a>
+                  <a href="#" class="search__mobile-link font-normal font-main uppercase dark:text-white text-black text-[14px] px-2 py-[2px] dark:border-[#1A1A1A] border-[2px] border-[#E7E7E7] rounded-[6px] hover dark:hover:bg-accent hover:bg-[#E7E7E7]">FACILYTI</a>
+                  <a href="#" class="search__mobile-link font-normal font-main uppercase dark:text-white text-black text-[14px] px-2 py-[2px] dark:border-[#1A1A1A] border-[2px] border-[#E7E7E7] rounded-[6px] hover dark:hover:bg-accent hover:bg-[#E7E7E7]">MEKOA</a>
+                  <a href="#" class="search__mobile-link font-normal font-main uppercase dark:text-white text-black text-[14px] px-2 py-[2px] dark:border-[#1A1A1A] border-[2px] border-[#E7E7E7] rounded-[6px] hover dark:hover:bg-accent hover:bg-[#E7E7E7]">TABOO</a>
+                  <a href="#" class="search__mobile-link font-normal font-main uppercase dark:text-white text-black text-[14px] px-2 py-[2px] dark:border-[#1A1A1A] border-[2px] border-[#E7E7E7] rounded-[6px] hover dark:hover:bg-accent hover:bg-[#E7E7E7]">LOREM</a>
+                  <a href="#" class="search__mobile-link font-normal font-main uppercase dark:text-white text-black text-[14px] px-2 py-[2px] dark:border-[#1A1A1A] border-[2px] border-[#E7E7E7] rounded-[6px] hover dark:hover:bg-accent hover:bg-[#E7E7E7]">DOLIRAT</a>
+                  <a href="#" class="search__mobile-link font-normal font-main uppercase dark:text-white text-black text-[14px] px-2 py-[2px] dark:border-[#1A1A1A] border-[2px] border-[#E7E7E7] rounded-[6px] hover dark:hover:bg-accent hover:bg-[#E7E7E7]">INTRO</a>
+                  <a href="#" class="search__mobile-link font-normal font-main uppercase dark:text-white text-black text-[14px] px-2 py-[2px] dark:border-[#1A1A1A] border-[2px] border-[#E7E7E7] rounded-[6px] hover dark:hover:bg-accent hover:bg-[#E7E7E7]">KARTON</a>
+                  <a href="#" class="search__mobile-link font-normal font-main uppercase dark:text-white text-black text-[14px] px-2 py-[2px] dark:border-[#1A1A1A] border-[2px] border-[#E7E7E7] rounded-[6px] hover dark:hover:bg-accent hover:bg-[#E7E7E7]">FACILYTI</a>
+                  <a href="#" class="search__mobile-link font-normal font-main uppercase dark:text-white text-black text-[14px] px-2 py-[2px] dark:border-[#1A1A1A] border-[2px] border-[#E7E7E7] rounded-[6px] hover dark:hover:bg-accent hover:bg-[#E7E7E7]">MEKOA</a>
+                  <a href="#" class="search__mobile-link font-normal font-main uppercase dark:text-white text-black text-[14px] px-2 py-[2px] dark:border-[#1A1A1A] border-[2px] border-[#E7E7E7] rounded-[6px] hover dark:hover:bg-accent hover:bg-[#E7E7E7]">TABOO</a>
+                  <a href="#" class="search__mobile-link font-normal font-main uppercase dark:text-white text-black text-[14px] px-2 py-[2px] dark:border-[#1A1A1A] border-[2px] border-[#E7E7E7] rounded-[6px] hover dark:hover:bg-accent hover:bg-[#E7E7E7]">LOREM</a>
+                  <a href="#" class="search__mobile-link font-normal font-main uppercase dark:text-white text-black text-[14px] px-2 py-[2px] dark:border-[#1A1A1A] border-[2px] border-[#E7E7E7] rounded-[6px] hover dark:hover:bg-accent hover:bg-[#E7E7E7]">DOLIRAT</a>
+                  <a href="#" class="search__mobile-link font-normal font-main uppercase dark:text-white text-black text-[14px] px-2 py-[2px] dark:border-[#1A1A1A] border-[2px] border-[#E7E7E7] rounded-[6px] hover dark:hover:bg-accent hover:bg-[#E7E7E7]">INTRO</a>
+                  <a href="#" class="search__mobile-link font-normal font-main uppercase dark:text-white text-black text-[14px] px-2 py-[2px] dark:border-[#1A1A1A] border-[2px] border-[#E7E7E7] rounded-[6px] hover dark:hover:bg-accent hover:bg-[#E7E7E7]">KARTON</a>
+                  <a href="#" class="search__mobile-link font-normal font-main uppercase dark:text-white text-black text-[14px] px-2 py-[2px] dark:border-[#1A1A1A] border-[2px] border-[#E7E7E7] rounded-[6px] hover dark:hover:bg-accent hover:bg-[#E7E7E7]">FACILYTI</a>
+                  <a href="#" class="search__mobile-link font-normal font-main uppercase dark:text-white text-black text-[14px] px-2 py-[2px] dark:border-[#1A1A1A] border-[2px] border-[#E7E7E7] rounded-[6px] hover dark:hover:bg-accent hover:bg-[#E7E7E7]">TABOO</a>
+                  <a href="#" class="search__mobile-link font-normal font-main uppercase dark:text-white text-black text-[14px] px-2 py-[2px] dark:border-[#1A1A1A] border-[2px] border-[#E7E7E7] rounded-[6px] hover dark:hover:bg-accent hover:bg-[#E7E7E7]">LOREM</a>
+                  <a href="#" class="search__mobile-link font-normal font-main uppercase dark:text-white text-black text-[14px] px-2 py-[2px] dark:border-[#1A1A1A] border-[2px] border-[#E7E7E7] rounded-[6px] hover dark:hover:bg-accent hover:bg-[#E7E7E7]">DOLIRAT</a>
+                  <a href="#" class="search__mobile-link font-normal font-main uppercase dark:text-white text-black text-[14px] px-2 py-[2px] dark:border-[#1A1A1A] border-[2px] border-[#E7E7E7] rounded-[6px] hover dark:hover:bg-accent hover:bg-[#E7E7E7]">INTRO</a>
+                  <a href="#" class="search__mobile-link font-normal font-main uppercase dark:text-white text-black text-[14px] px-2 py-[2px] dark:border-[#1A1A1A] border-[2px] border-[#E7E7E7] rounded-[6px] hover dark:hover:bg-accent hover:bg-[#E7E7E7]">KARTON</a>
+                  <a href="#" class="search__mobile-link font-normal font-main uppercase dark:text-white text-black text-[14px] px-2 py-[2px] dark:border-[#1A1A1A] border-[2px] border-[#E7E7E7] rounded-[6px] hover dark:hover:bg-accent hover:bg-[#E7E7E7]">FACILYTI</a>
+                  <a href="#" class="search__mobile-link font-normal font-main uppercase dark:text-white text-black text-[14px] px-2 py-[2px] dark:border-[#1A1A1A] border-[2px] border-[#E7E7E7] rounded-[6px] hover dark:hover:bg-accent hover:bg-[#E7E7E7]">MEKOA</a>
+                  <a href="#" class="search__mobile-link font-normal font-main uppercase dark:text-white text-black text-[14px] px-2 py-[2px] dark:border-[#1A1A1A] border-[2px] border-[#E7E7E7] rounded-[6px] hover dark:hover:bg-accent hover:bg-[#E7E7E7]">TABOO</a>
+                  <a href="#" class="search__mobile-link font-normal font-main uppercase dark:text-white text-black text-[14px] px-2 py-[2px] dark:border-[#1A1A1A] border-[2px] border-[#E7E7E7] rounded-[6px] hover dark:hover:bg-accent hover:bg-[#E7E7E7]">LOREM</a>
+                  <a href="#" class="search__mobile-link font-normal font-main uppercase dark:text-white text-black text-[14px] px-2 py-[2px] dark:border-[#1A1A1A] border-[2px] border-[#E7E7E7] rounded-[6px] hover dark:hover:bg-accent hover:bg-[#E7E7E7]">DOLIRAT</a>
+                  <a href="#" class="search__mobile-link font-normal font-main uppercase dark:text-white text-black text-[14px] px-2 py-[2px] dark:border-[#1A1A1A] border-[2px] border-[#E7E7E7] rounded-[6px] hover dark:hover:bg-accent hover:bg-[#E7E7E7]">INTRO</a>
+                  <a href="#" class="search__mobile-link font-normal font-main uppercase dark:text-white text-black text-[14px] px-2 py-[2px] dark:border-[#1A1A1A] border-[2px] border-[#E7E7E7] rounded-[6px] hover dark:hover:bg-accent hover:bg-[#E7E7E7]">KARTON</a>
+                  <a href="#" class="search__mobile-link font-normal font-main uppercase dark:text-white text-black text-[14px] px-2 py-[2px] dark:border-[#1A1A1A] border-[2px] border-[#E7E7E7] rounded-[6px] hover dark:hover:bg-accent hover:bg-[#E7E7E7]">FACILYTI</a>
+                  <a href="#" class="search__mobile-link font-normal font-main uppercase dark:text-white text-black text-[14px] px-2 py-[2px] dark:border-[#1A1A1A] border-[2px] border-[#E7E7E7] rounded-[6px] hover dark:hover:bg-accent hover:bg-[#E7E7E7]">MEKOA</a>
+
+                  <a href="#" class="search__mobile-link font-normal font-main uppercase dark:text-white text-black text-[14px] px-2 py-[2px] dark:border-[#1A1A1A] border-[2px] border-[#E7E7E7] rounded-[6px] hover dark:hover:bg-accent hover:bg-[#E7E7E7]">MEKOA</a>
+               </div>
+
+               <p class="footer__text leading-[130%] font-accent font-normal text-black text-[14px] md:text-[16px] mb-[24px] dark:text-white">
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ab dolore iste neque, sunt recusandae voluptatibus doloribus ullam saepe fugit quidem, necessitatibus aliquam numquam repellendus mollitia quos illum tenetur natus! Velit.               
+               </p>
+
+               <div class="footer__header justify-center lg:justify-start flex items-center gap-x-[30px] gap-y-[15px] py-[24px] flex-wrap border-t-[1px] border-b-[1px] dark:border-[#1A1A1A] border-[#E7E7E7] mb-[24px]">
+                  <a href="#" class="logo flex items-center flex-shrink-0 font-main text-[24px] smd:text-[28px] md:text-[32px] text-center font-bold text-accent">
+                     <span class="leading-[100%]">A</span>
+                     <span class="text-black dark:text-white">-</span>
+                     <span class="leading-[100%]">VI</span>
+                     <span class="text-black dark:text-white">-</span>
+                     <span class="leading-[100%]">DOS</span>
+                  </a>
+
+                  <nav class="footer__nav flex items-center gap-[16px]">
+                     <a class="footer__nav-link active font-accent font-normal text-[14px] md:text-[16px] text-accent pointer-events-none">Home</a>
+                     <a href="#" class="footer__nav-link font-accent font-normal text-[14px] md:text-[16px] text-black dark:text-white dark:hover:text-accent hover:text-accent">Support</a>
+                     <a href="#" class="footer__nav-link font-accent font-normal text-[14px] md:text-[16px] text-black dark:text-white dark:hover:text-accent hover:text-accent">Terms</a>
+                  </nav>
+
+                  <div class="footer__controls flex items-center gap-[8px] ml-auto w-full lg:w-auto">
+                     <a href="#" class="footer__controls-link flex items-center justify-center w-1/2 lg:w-[156px] h-[34px] hover:bg-accenthover bg-accent text-white font-accent font-bold text-[14px] rounded-[6px] hover">Sign in</a>
+                     <a href="#" class="footer__controls-link flex items-center justify-center w-1/2 lg:w-[156px] h-[34px] hover:bg-accenthover border-[1px] dark:border-[#1A1A1A] border-[#E7E7E7] dark:bg-[#0A0A0A] dark:hover:bg-accenthover bg-white dark:text-white hover:text-white dark:hover:text-white hover text-black font-accent font-bold text-[14px] rounded-[6px]">Log in</a>
+                  </div>                  
+               </div>
+
+               <h3 class="footer__title font-accent font-bold text-[18px] md:text-[24px] text-black dark:text-white mb-[12px]">
+                  Watchonline for free
+               </h3>
+
+               <p class="footer__tetx leading-[130%] font-accent font-bold text-[12px] md:text-[14px] text-[#AAAAAA] pb-[24px] border-b-[1px] dark:border-[#1A1A1A] border-[#E7E7E7]">
+               Lorem ipsum dolor sit, amet consectetur adipisicing elit. Praesentium obcaecati odit recusandae, molestiae quo nostrum explicabo perspiciatis. Optio, architecto! Ea minus modi odio totam nihil repudiandae blanditiis, similique harum iure.                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Praesentium obcaecati odit recusandae, molestiae quo nostrum explicabo perspiciatis. Optio, architecto! Ea minus modi odio totam nihil repudiandae blanditiis, similique harum iure.
+
+               </p>
+            
+               <div class="footer__copy py-[16px] flex items-center justify-between gap-[12px] w-full flex-wrap">
+                  <div class="footer__copy-item font-accent font-bold text-[12px] md:text-[14px] text-[#AAAAAA] uppercase">2005-2024</div>
+                  <div class="footer__copy-item font-accent font-bold text-[12px] md:text-[14px] text-[#AAAAAA]">a-vi-dos.com</div>
+                  <div class="footer__copy-item font-accent font-bold text-[12px] md:text-[14px] text-[#AAAAAA]">© All rights reserved</div>
+               </div>
+            </div>
+         </footer>
+
+
+            <!-- sprite-svg ----------------------------------->
+            <svg class="hidden" display="none">
+               <symbol id="search" viewBox="0 0 20 20">
+                  <path d="M0.209677 18.5774L5.18384 13.6033C3.82833 11.9454 3.16186 9.83002 3.32231 7.69458C3.48275 5.55913 4.45783 3.56705 6.04586 2.13037C7.63388 0.693699 9.71335 -0.0776494 11.8541 -0.0241229C13.9949 0.0294036 16.0333 0.90371 17.5475 2.41795C19.0617 3.93219 19.9361 5.97052 19.9896 8.11131C20.0431 10.2521 19.2718 12.3316 17.8351 13.9196C16.3984 15.5076 14.4063 16.4827 12.2709 16.6431C10.1354 16.8036 8.02002 16.1371 6.36218 14.7816L1.38801 19.7558C1.23084 19.9076 1.02034 19.9916 0.801844 19.9897C0.583345 19.9878 0.374336 19.9001 0.21983 19.7456C0.0653229 19.5911 -0.0223198 19.3821 -0.0242176 19.1636C-0.0261173 18.9451 0.0578785 18.7346 0.209677 18.5774ZM11.6322 14.9999C12.9507 14.9999 14.2397 14.6089 15.336 13.8764C16.4323 13.1439 17.2868 12.1027 17.7914 10.8845C18.296 9.66632 18.428 8.32588 18.1707 7.03267C17.9135 5.73947 17.2786 4.55158 16.3462 3.61923C15.4139 2.68688 14.226 2.05194 12.9328 1.79471C11.6396 1.53747 10.2991 1.66949 9.08096 2.17408C7.86278 2.67866 6.82159 3.53314 6.08905 4.62947C5.35651 5.7258 4.96551 7.01473 4.96551 8.33327C4.9675 10.1008 5.67051 11.7953 6.92033 13.0451C8.17014 14.2949 9.86468 14.998 11.6322 14.9999Z" fill=""/>
+               </symbol>
+            </svg>
+         
+            <svg class="hidden" display="none">
+               <symbol id="arrow-up" viewBox="0 0 15 8">
+                  <path d="M5.5722 1.29075L0.982199 5.88075C0.795948 6.06811 0.691406 6.32156 0.691406 6.58575C0.691406 6.84994 0.795948 7.10339 0.982199 7.29075C1.07516 7.38448 1.18576 7.45887 1.30762 7.50964C1.42948 7.56041 1.56019 7.58655 1.6922 7.58655C1.82421 7.58655 1.95492 7.56041 2.07678 7.50964C2.19863 7.45887 2.30924 7.38448 2.4022 7.29075L6.9822 2.69075C7.07516 2.59702 7.18576 2.52263 7.30762 2.47186C7.42948 2.42109 7.56019 2.39495 7.6922 2.39495C7.82421 2.39495 7.95492 2.42109 8.07678 2.47186C8.19864 2.52263 8.30924 2.59702 8.4022 2.69075L12.9822 7.29075C13.1692 7.47905 13.4233 7.58537 13.6887 7.58631C13.954 7.58724 14.2089 7.48273 14.3972 7.29575C14.5855 7.10877 14.6918 6.85465 14.6928 6.58928C14.6937 6.32392 14.5892 6.06905 14.4022 5.88075L9.8122 1.29075C9.2497 0.728948 8.4872 0.413388 7.6922 0.413388C6.8972 0.413388 6.1347 0.728948 5.5722 1.29075Z" fill=""/>
+               </symbol>
+            </svg>
+            
+            <svg class="hidden" display="none">
+               <symbol id="light" viewBox="0 0 16 16">
+                  <g clip-path="url(#clip0_2057_9123)">
+                     <path d="M8 11.3333C6.16 11.3333 4.66667 9.84 4.66667 8C4.66667 6.16 6.16 4.66667 8 4.66667C9.84 4.66667 11.3333 6.16 11.3333 8C11.3333 9.84 9.84 11.3333 8 11.3333ZM8.66667 2.66667V0.666667C8.66667 0.3 8.36667 0 8 0C7.63333 0 7.33333 0.3 7.33333 0.666667V2.66667C7.33333 3.03333 7.63333 3.33333 8 3.33333C8.36667 3.33333 8.66667 3.03333 8.66667 2.66667ZM8.66667 15.3333V13.3333C8.66667 12.9667 8.36667 12.6667 8 12.6667C7.63333 12.6667 7.33333 12.9667 7.33333 13.3333V15.3333C7.33333 15.7 7.63333 16 8 16C8.36667 16 8.66667 15.7 8.66667 15.3333ZM3.33333 8C3.33333 7.63333 3.03333 7.33333 2.66667 7.33333H0.666667C0.3 7.33333 0 7.63333 0 8C0 8.36667 0.3 8.66667 0.666667 8.66667H2.66667C3.03333 8.66667 3.33333 8.36667 3.33333 8ZM16 8C16 7.63333 15.7 7.33333 15.3333 7.33333H13.3333C12.9667 7.33333 12.6667 7.63333 12.6667 8C12.6667 8.36667 12.9667 8.66667 13.3333 8.66667H15.3333C15.7 8.66667 16 8.36667 16 8ZM4.47333 4.47333C4.73333 4.21333 4.73333 3.79333 4.47333 3.53333L3.14 2.2C2.88 1.94 2.46 1.94 2.2 2.2C1.94 2.46 1.94 2.88 2.2 3.14L3.53333 4.47333C3.66667 4.60667 3.83333 4.66667 4.00667 4.66667C4.18 4.66667 4.34667 4.6 4.48 4.47333H4.47333ZM13.8067 13.8067C14.0667 13.5467 14.0667 13.1267 13.8067 12.8667L12.4733 11.5333C12.2133 11.2733 11.7933 11.2733 11.5333 11.5333C11.2733 11.7933 11.2733 12.2133 11.5333 12.4733L12.8667 13.8067C13 13.94 13.1667 14 13.34 14C13.5133 14 13.68 13.9333 13.8133 13.8067H13.8067ZM3.14 13.8067L4.47333 12.4733C4.73333 12.2133 4.73333 11.7933 4.47333 11.5333C4.21333 11.2733 3.79333 11.2733 3.53333 11.5333L2.2 12.8667C1.94 13.1267 1.94 13.5467 2.2 13.8067C2.33333 13.94 2.5 14 2.67333 14C2.84667 14 3.01333 13.9333 3.14667 13.8067H3.14ZM12.4733 4.47333L13.8067 3.14C14.0667 2.88 14.0667 2.46 13.8067 2.2C13.5467 1.94 13.1267 1.94 12.8667 2.2L11.5333 3.53333C11.2733 3.79333 11.2733 4.21333 11.5333 4.47333C11.6667 4.60667 11.8333 4.66667 12.0067 4.66667C12.18 4.66667 12.3467 4.6 12.48 4.47333H12.4733Z" fill=""/>
+                     </g>
+                     <defs>
+                     <clipPath id="clip0_2057_9123">
+                     <rect width="16" height="16" fill=""/>
+                     </clipPath>
+                     </defs>
+                  </symbol>
+            </svg>
+
+            <svg class="hidden" display="none">
+               <symbol id="dark" viewBox="0 0 16 16">
+                  <g clip-path="url(#clip0_2057_9121)">
+                     <path d="M8.00424 16C6.88395 15.9933 5.77742 15.7526 4.75552 15.2935C3.73362 14.8343 2.81888 14.1668 2.0699 13.3337C1.32092 12.5005 0.754218 11.5202 0.406085 10.4553C0.0579521 9.39047 -0.0639322 8.26465 0.0482393 7.14997C0.247553 5.40937 1.00716 3.7807 2.21261 2.50936C3.41806 1.23802 5.00404 0.392887 6.73157 0.101305C7.84762 -0.0718507 8.98676 -0.0251983 10.0849 0.238638C10.3741 0.312854 10.638 0.463375 10.8491 0.674468C11.0602 0.885562 11.2107 1.14948 11.2849 1.43864C11.3597 1.72517 11.3558 2.02657 11.2737 2.31108C11.1915 2.59559 11.0342 2.85269 10.8182 3.05531C7.77891 5.83397 8.04157 10.152 11.3562 12.6633C11.5904 12.8472 11.771 13.0906 11.8792 13.3679C11.9875 13.6453 12.0195 13.9466 11.9718 14.2406C11.9242 14.5345 11.7987 14.8103 11.6084 15.0393C11.418 15.2683 11.1698 15.4421 10.8896 15.5426C9.95809 15.847 8.98417 16.0013 8.00424 16ZM13.6649 7.99997C13.5163 7.99997 13.3719 7.9503 13.2548 7.85887C13.1376 7.76743 13.0544 7.63947 13.0182 7.49531L12.7796 6.54197L11.8249 6.28531C11.6813 6.24666 11.5548 6.16112 11.4654 6.0423C11.376 5.92348 11.329 5.77819 11.3316 5.62953C11.3343 5.48087 11.3866 5.33737 11.4802 5.22185C11.5738 5.10633 11.7034 5.02542 11.8482 4.99197L12.7816 4.77531L13.0156 3.83797C13.0517 3.69382 13.135 3.56587 13.2521 3.47445C13.3693 3.38303 13.5136 3.33337 13.6622 3.33337C13.8109 3.33337 13.9552 3.38303 14.0724 3.47445C14.1895 3.56587 14.2728 3.69382 14.3089 3.83797L14.5456 4.78331L15.4909 5.01997C15.6351 5.0561 15.763 5.13936 15.8544 5.25652C15.9458 5.37368 15.9955 5.51803 15.9955 5.66664C15.9955 5.81525 15.9458 5.9596 15.8544 6.07676C15.763 6.19392 15.6351 6.27718 15.4909 6.31331L14.5456 6.54997L14.3089 7.49531C14.2729 7.63903 14.1901 7.76666 14.0734 7.85805C13.9568 7.94944 13.8131 7.99938 13.6649 7.99997ZM15.3316 11.3433C15.1548 11.3433 14.9852 11.4135 14.8602 11.5386C14.7351 11.6636 14.6649 11.8332 14.6649 12.01C14.6649 12.1868 14.7351 12.3564 14.8602 12.4814C14.9852 12.6064 15.1548 12.6766 15.3316 12.6766C15.5084 12.6766 15.678 12.6064 15.803 12.4814C15.928 12.3564 15.9982 12.1868 15.9982 12.01C15.9982 11.8332 15.928 11.6636 15.803 11.5386C15.678 11.4135 15.5084 11.3433 15.3316 11.3433ZM11.3316 8.67664C11.1548 8.67664 10.9852 8.74688 10.8602 8.8719C10.7351 8.99693 10.6649 9.1665 10.6649 9.34331C10.6649 9.52012 10.7351 9.68969 10.8602 9.81471C10.9852 9.93973 11.1548 10.01 11.3316 10.01C11.5084 10.01 11.678 9.93973 11.803 9.81471C11.928 9.68969 11.9982 9.52012 11.9982 9.34331C11.9982 9.1665 11.928 8.99693 11.803 8.8719C11.678 8.74688 11.5084 8.67664 11.3316 8.67664Z" fill=""/>
+                     </g>
+                     <defs>
+                     <clipPath id="clip0_2057_9121">
+                     <rect width="16" height="16" fill=""/>
+                     </clipPath>
+                     </defs>
+                  </symbol>
+            </svg>
+
+            <svg class="hidden" display="none">
+               <symbol id="x" viewBox="0 0 24 24">
+                  <g clip-path="url(#clip0_2057_9121)">
+                  <path d="M17.7886 20.0312C18.3755 20.6181 19.323 20.6181 19.9099 20.0312C20.4968 19.4443 20.4968 18.4968 19.9099 17.9099L5.06066 3.06066C4.47376 2.47376 3.52624 2.47376 2.93934 3.06066C2.35244 3.64756 2.35244 4.59508 2.93934 5.18198L17.7886 20.0312Z" fill=""/>
+                  <path d="M5.05907 20.0312C4.47218 20.6181 3.52465 20.6181 2.93775 20.0312C2.35086 19.4443 2.35086 18.4968 2.93775 17.9099L17.787 3.06066C18.3739 2.47376 19.3214 2.47376 19.9083 3.06066C20.4952 3.64756 20.4952 4.59508 19.9083 5.18198L5.05907 20.0312Z" fill=""/>
+               </symbol>
+            </svg>
+         
+            <svg class="hidden" display="none">
+               <symbol id="home" viewBox="0 0 20 20">
+                  <g clip-path="url(#clip0_2057_8604)">
+                     <path fill-rule="evenodd" clip-rule="evenodd" d="M0.523039 5.82332C0.00390625 6.77174 0.00390625 7.9158 0.00390625 10.2039V11.7248C0.00390625 15.6251 0.00390625 17.5754 1.17532 18.787C2.34675 19.9987 4.23211 19.9987 8.00286 19.9987H12.0023C15.7731 19.9987 17.6585 19.9987 18.8299 18.787C20.0013 17.5754 20.0013 15.6251 20.0013 11.7248V10.2039C20.0013 7.9158 20.0013 6.77174 19.4822 5.82332C18.963 4.87492 18.0147 4.28629 16.1178 3.10906L14.1181 1.86797C12.1129 0.623552 11.1104 0.00134277 10.0026 0.00134277C8.89485 0.00134277 7.89227 0.623552 5.88717 1.86797L3.88743 3.10907C1.9906 4.28629 1.04217 4.87492 0.523039 5.82332ZM6.25 15.9992C6.25 15.5851 6.58575 15.2493 6.9999 15.2493H12.9991C13.4133 15.2493 13.749 15.5851 13.749 15.9992C13.749 16.4134 13.4133 16.7491 12.9991 16.7491H6.9999C6.58575 16.7491 6.25 16.4134 6.25 15.9992Z" fill=""/>
+                     </g>
+                     <defs>
+                     <clipPath id="clip0_2057_8604">
+                     <rect width="20" height="20" fill=""/>
+                     </clipPath>
+                     </defs>
+               </symbol>
+            </svg>
+
+            <svg class="hidden" display="none">
+               <symbol id="best-video" viewBox="0 0 20 20">
+                  <g clip-path="url(#clip0_2057_8611)">
+                     <path d="M12.5758 13.3309C18.0517 13.3034 20 10.4034 20 7.91669C20 6.51919 19.01 5.35002 17.6958 5.06752C17.8092 4.74585 17.9075 4.45002 17.9733 4.22585C18.2675 3.23169 18.0775 2.18169 17.4517 1.34419C16.8133 0.490854 15.8375 0.000854492 14.7733 0.000854492H5.22583C4.16167 0.000854492 3.185 0.490854 2.54667 1.34419C1.92083 2.18169 1.73083 3.23252 2.025 4.22585C2.09167 4.45002 2.18917 4.74585 2.30333 5.06835C0.989167 5.35085 0 6.52002 0 7.91752C0 10.4042 1.94917 13.3042 7.42417 13.3317C7.47083 13.5834 7.5 13.84 7.5 14.1017V16.6675C7.5 18.1892 6.22 18.3275 5.83333 18.3342H5C4.53917 18.3342 4.16667 18.7067 4.16667 19.1675C4.16667 19.6284 4.53917 20.0009 5 20.0009H15C15.4608 20.0009 15.8333 19.6284 15.8333 19.1675C15.8333 18.7067 15.4608 18.3342 15 18.3342H14.1733C13.78 18.3275 12.5 18.1892 12.5 16.6675V14.1009C12.5 13.84 12.5292 13.5834 12.5758 13.3317V13.3309ZM17.0433 6.65835C17.0575 6.65835 17.0692 6.66669 17.0833 6.66669C17.7725 6.66669 18.3333 7.22752 18.3333 7.91669C18.3333 9.61169 16.9925 11.4142 13.3033 11.6417C13.4875 11.3925 13.6983 11.1617 13.9383 10.9575C15.3875 9.72585 16.3825 8.08002 17.0433 6.65835ZM1.66667 7.91669C1.66667 7.22752 2.2275 6.66669 2.91667 6.66669C2.93083 6.66669 2.9425 6.65919 2.95583 6.65835C3.6175 8.08002 4.6125 9.72585 6.06167 10.9575C6.30167 11.1617 6.5125 11.3917 6.69667 11.6417C3.0075 11.4142 1.66667 9.61169 1.66667 7.91669ZM8.16 8.13585C7.94 7.98419 7.8475 7.70419 7.935 7.45085L8.3675 6.11252L7.22917 5.27919C6.95667 5.07919 6.8975 4.69669 7.0975 4.42419C7.2125 4.26752 7.39583 4.17419 7.59 4.17419H8.99083L9.41667 2.84669C9.52417 2.52419 9.8725 2.35085 10.195 2.45835C10.3783 2.51919 10.5225 2.66335 10.5833 2.84669L11.0083 4.17419H12.4092C12.7467 4.17419 13.0208 4.44752 13.0208 4.78585C13.0208 4.98169 12.9275 5.16502 12.77 5.28002L11.6317 6.11335L12.0642 7.45169C12.1675 7.77335 11.9908 8.11835 11.6683 8.22252C11.4817 8.28252 11.2775 8.24919 11.1192 8.13335L10 7.31002L8.88 8.13252C8.66667 8.29169 8.375 8.29252 8.16 8.13585Z" fill=""/>
+                  </g>
+                  <defs>
+                  <clipPath id="clip0_2057_8611">
+                  <rect width="20" height="20" fill=""/>
+                  </clipPath>
+                  </defs>
+               </symbol>
+            </svg>
+         
+            <svg class="hidden" display="none">
+               <symbol id="categories" viewBox="0 0 20 20">
+                  <g clip-path="url(#clip0_2057_8619)">
+                     <path d="M7.2 0H4.05C1.8135 0 0 1.83182 0 4.09091V7.27273C0 8.27727 0.8055 9.09091 1.8 9.09091H7.2C8.1945 9.09091 9 8.27727 9 7.27273V1.81818C9 0.813636 8.1945 0 7.2 0ZM7.2 10.9091H1.8C0.8055 10.9091 0 11.7227 0 12.7273V15.9091C0 18.1682 1.8135 20 4.05 20H7.2C8.1945 20 9 19.1864 9 18.1818V12.7273C9 11.7227 8.1945 10.9091 7.2 10.9091Z" fill=""/>
+                     <path d="M18.2 9H12.8C11.8055 9 11 8.1945 11 7.2V1.8C11 0.8055 11.8055 0 12.8 0H15.95C18.1865 0 20 1.8135 20 4.05V7.2C20 8.1945 19.1945 9 18.2 9Z" fill=""/>
+                     <path d="M18.2 11H12.8C11.8055 11 11 11.8055 11 12.8V18.2C11 19.1945 11.8055 20 12.8 20H15.95C18.1865 20 20 18.1865 20 15.95V12.8C20 11.8055 19.1945 11 18.2 11Z" fill=""/>
+                  </g>
+                  <defs>
+                     <clipPath id="clip0_2057_8619">
+                     <rect width="20" height="20" fill=""/>
+                     </clipPath>
+                  </defs>
+               </symbol>
+            </svg>
+            
+            <svg class="hidden" display="none">
+               <symbol id="channels" viewBox="0 0 20 20">
+                  <g clip-path="url(#clip0_2057_8629)">
+                     <path fill-rule="evenodd" clip-rule="evenodd" d="M20 14V9.99994C20 7.17146 20 5.75721 19.0414 4.8785C18.1411 4.05318 16.7254 4.00305 14 4V20C16.7254 19.997 18.1411 19.9468 19.0414 19.1215C20 18.2429 20 16.8285 20 14ZM16.7273 8.99982C17.3298 8.99982 17.8182 9.44753 17.8182 9.99984C17.8182 10.5522 17.3298 10.9999 16.7273 10.9999C16.1248 10.9999 15.6364 10.5522 15.6364 9.99984C15.6364 9.44753 16.1248 8.99982 16.7273 8.99982ZM16.7273 12.9999C17.3298 12.9999 17.8182 13.4476 17.8182 13.9999C17.8182 14.5523 17.3298 15 16.7273 15C16.1248 15 15.6364 14.5523 15.6364 13.9999C15.6364 13.4476 16.1248 12.9999 16.7273 12.9999Z" fill=""/>
+                     <path d="M13.8161 1.25378L11.6239 3.79756H13.2364V20H6.10909C3.22923 20 1.78931 20 0.894655 19.1102C0 18.2205 0 16.7883 0 13.9241V9.87347C0 7.00927 0 5.57716 0.894655 4.68736C1.78931 3.79756 3.22923 3.79756 6.10909 3.79756H8.73976L6.54745 1.25378C6.27299 0.935297 6.31008 0.455836 6.63028 0.182855C6.9505 -0.0901154 7.43258 -0.0532345 7.70705 0.265235L10.1818 3.13676L12.6565 0.265235C12.931 -0.0532345 13.4131 -0.0901256 13.7333 0.182855C14.0535 0.455836 14.0906 0.935297 13.8161 1.25378Z" fill=""/>
+                  </g>
+                  <defs>
+                     <clipPath id="clip0_2057_8629">
+                     <rect width="20" height="20" fill=""/>
+                     </clipPath>
+                  </defs>
+               </symbol>
+            </svg>
+            
+            <svg class="hidden" display="none">
+               <symbol id="star" viewBox="0 0 20 20">
+                  <path d="M9.01816 1.86252C9.43505 1.07236 10.5667 1.07236 10.9836 1.86252L13.142 5.9535C13.3028 6.25822 13.5958 6.47112 13.9353 6.52986L18.4931 7.31846C19.3734 7.47078 19.7231 8.54704 19.1004 9.18771L15.8766 12.5047C15.6365 12.7517 15.5246 13.0962 15.5736 13.4372L16.2321 18.0156C16.3592 18.8999 15.4437 19.5651 14.642 19.1709L10.4912 17.1299C10.182 16.9779 9.81978 16.9779 9.5106 17.1299L5.35978 19.1709C4.55806 19.5651 3.64253 18.8999 3.7697 18.0156L4.42812 13.4372C4.47716 13.0962 4.36523 12.7517 4.12511 12.5047L0.901344 9.18771C0.278682 8.54704 0.628379 7.47078 1.5087 7.31846L6.06644 6.52986C6.40593 6.47112 6.69896 6.25822 6.85973 5.9535L9.01816 1.86252Z" fill=""/>
+               </symbol>
+            </svg>
+            
+            <svg class="hidden" display="none">
+               <symbol id="time" viewBox="0 0 18 18">
+                  <path d="M9 0C7.21997 0 5.47991 0.527841 3.99987 1.51677C2.51983 2.50571 1.36628 3.91131 0.685088 5.55585C0.00389957 7.20038 -0.17433 9.00998 0.172937 10.7558C0.520204 12.5016 1.37737 14.1053 2.63604 15.364C3.89472 16.6226 5.49836 17.4798 7.24419 17.8271C8.99002 18.1743 10.7996 17.9961 12.4442 17.3149C14.0887 16.6337 15.4943 15.4802 16.4832 14.0001C17.4722 12.5201 18 10.78 18 9C17.9974 6.61384 17.0484 4.32616 15.3611 2.63889C13.6738 0.951621 11.3862 0.00258081 9 0ZM9.75 8.90925C9.75008 9.03638 9.71784 9.16145 9.65631 9.27271C9.59478 9.38396 9.50598 9.47774 9.39825 9.54525L6.51825 11.3453C6.43454 11.3975 6.34134 11.4328 6.24398 11.4491C6.14662 11.4654 6.04701 11.4624 5.95083 11.4401C5.85465 11.4179 5.76379 11.377 5.68343 11.3196C5.60308 11.2623 5.5348 11.1897 5.4825 11.106C5.4302 11.0223 5.39491 10.9291 5.37863 10.8317C5.36235 10.7344 5.3654 10.6348 5.38762 10.5386C5.40983 10.4424 5.45078 10.3515 5.50811 10.2712C5.56544 10.1908 5.63804 10.1226 5.72175 10.0703L8.25 8.49375V5.25C8.25 5.05109 8.32902 4.86032 8.46967 4.71967C8.61033 4.57902 8.80109 4.5 9 4.5C9.19892 4.5 9.38968 4.57902 9.53033 4.71967C9.67099 4.86032 9.75 5.05109 9.75 5.25V8.90925Z" fill=""/>
+               </symbol>
+            </svg>
+            
+            <svg class="hidden" display="none">
+               <symbol id="heart" viewBox="0 0 18 17">
+                  <path d="M13.1247 0.437744C12.2802 0.45088 11.4541 0.686634 10.7298 1.1212C10.0055 1.55576 9.40874 2.17375 8.99972 2.91274C8.5907 2.17375 7.99392 1.55576 7.26965 1.1212C6.54538 0.686634 5.71926 0.45088 4.87472 0.437744C3.52843 0.496237 2.26 1.08518 1.34656 2.07592C0.433119 3.06665 -0.0510883 4.37864 -0.000275423 5.72524C-0.000275423 9.13549 3.58922 12.86 6.59972 15.3852C7.27189 15.9501 8.12174 16.2598 8.99972 16.2598C9.87771 16.2598 10.7276 15.9501 11.3997 15.3852C14.4102 12.86 17.9997 9.13549 17.9997 5.72524C18.0505 4.37864 17.5663 3.06665 16.6529 2.07592C15.7394 1.08518 14.471 0.496237 13.1247 0.437744Z" fill=""/>
+               </symbol>
+            </svg>
+            <!-- sprite-svg ----------------------------------->
+
+
+         
+
+            <!-- <svg >
+               <use xlink:href="#..."></use>
+            </svg> -->
+
+            
+
+      </div>   
+
+      <script src="./js/app.js"></script>
+   </body>
+</html>
